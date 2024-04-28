@@ -1,0 +1,19 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "81333d2946908f456b1a7691b61324660840c1e4315bc02e30a921dd842d35fe": {
+      "source": {
+        "path": "ApiLambdaCrudDynamoDBExample.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "81333d2946908f456b1a7691b61324660840c1e4315bc02e30a921dd842d35fe.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

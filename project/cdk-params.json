@@ -1,0 +1,4 @@
+{
+  "ECR_IMAGE_URI": "339712979549.dkr.ecr.us-west-2.amazonaws.com/ollama-llama2-repo:latest",
+  "MODEL_NAME": "llama2"
+}
