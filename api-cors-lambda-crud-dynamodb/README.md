@@ -1,6 +1,6 @@
 # APIGateway with CORS, Lambdas, and CRUD on DynamoDB
-<!--BEGIN STABILITY BANNER-->
----
+
+## <!--BEGIN STABILITY BANNER-->
 
 ![Stability: Stable](https://img.shields.io/badge/stability-Stable-success.svg?style=for-the-badge)
 
@@ -9,6 +9,7 @@
 > This examples is built on Construct Libraries marked "Stable" and does not have any infrastructure prerequisites to build.
 
 ---
+
 <!--END STABILITY BANNER-->
 
 This an example of an APIGateway with CORS enabled, pointing to five Lambdas executing CRUD operations on a single DynamoDB table.
@@ -36,11 +37,11 @@ After the deployment you will see the API's URL, which represents the url you ca
 The whole component contains:
 
 - An API, with CORS enabled on all HTTP Methods. (Use with caution, for production apps you will want to enable only a certain domain origin to be able to query your API.)
-- Lambda pointing to `lambdas/create.ts`, containing code for __storing__ an item  into the DynamoDB table.
-- Lambda pointing to `lambdas/delete-one.ts`, containing code for __deleting__ an item from the DynamoDB table.
-- Lambda pointing to `lambdas/get-all.ts`, containing code for __getting all items__ from the DynamoDB table.
-- Lambda pointing to `lambdas/get-one.ts`, containing code for __getting an item__ from the DynamoDB table.
-- Lambda pointing to `lambdas/update-one.ts`, containing code for __updating an item__ in the DynamoDB table.
+- Lambda pointing to `lambdas/create.ts`, containing code for **storing** an item into the DynamoDB table.
+- Lambda pointing to `lambdas/delete-one.ts`, containing code for **deleting** an item from the DynamoDB table.
+- Lambda pointing to `lambdas/get-all.ts`, containing code for **getting all items** from the DynamoDB table.
+- Lambda pointing to `lambdas/get-one.ts`, containing code for **getting an item** from the DynamoDB table.
+- Lambda pointing to `lambdas/update-one.ts`, containing code for **updating an item** in the DynamoDB table.
 - A DynamoDB table `items` that stores the data.
 - Five `LambdaIntegrations` that connect these Lambdas to the API.
 
@@ -63,4 +64,20 @@ After building your TypeScript code, you will be able to run the CDK toolkit com
 
     $ cdk diff
     <shows diff against deployed stack>
+```
+
+=========
+
+make sure docker is up
+
+run setup script to push to ecr and fill deployment params (the generated imageuri)
+
+run cdk deployment
+
+### 4. Test AWS Lambda Function
+
+Run the code below to test your AWS Lambda Function. You might need to invoke it twice to make sure the ollama server is running. The result will be written to ./output.txt
+
+```bash
+make invoke
 ```
