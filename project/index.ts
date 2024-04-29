@@ -46,6 +46,7 @@ export class AppStack extends Stack {
 
       const dockerImageFunctionProps: DockerImageFunctionProps = {
         functionName: `ollama_${cdkParams.MODEL_NAME}_runner`,
+        // TODO fix, might need more memory than max, switch to ECS Fargate?
         memorySize: 3008,
         ephemeralStorageSize: Size.gibibytes(10),
         timeout: Duration.seconds(300),
@@ -136,6 +137,7 @@ export class AppStack extends Stack {
     } else {
     }
     bucket.grantRead(lambda)
+    // TODO0 create an alarm for failure alerts
   }
 }
 

@@ -19,7 +19,7 @@ deploy: build
 	--context RunOnSchedule="false" \
 	--stack-name $(STACK_NAME)
 
-# TODO target needs to be fixed since Lambda ollama runnder is not working due to memory issues
+# TODO target needs to be fixed (Lambda ollama runner is not working due to memory issues, use Fargate)
 deploy-with-runner: build
 	npx cdk deploy \
 	--require-approval never \

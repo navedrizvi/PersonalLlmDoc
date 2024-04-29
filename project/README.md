@@ -108,3 +108,6 @@ add to phi-raw-records. each record should have a unique name. NOTE: do not keep
 add more phi-raw-records to the S3 bucket (using the S3 upload CLI/API). The folder here serves to demonstrates example records, and get uploaded to the bucked at deploy-time.
 
 To save costs, make sure to delete the CDK stack and, if applicable, the ECR repo.
+
+aws s3 cp root/ s3://ollama-llama3-stack-phi-raw-records/dest/ --recursive
+if you upload directly like this you need to make sure file is in JPEG format, since Tesseract (OCR software) only recognizes images. Use a tool like this to achieve this: https://smallpdf.com/pdf-to-jpg. It will convert one page to a single image. You can delete pages which contain data that is irrelevant for the model, eg: the most important page would likely be the vitals, results and clinic notes therefore other pages can be removed from such patient visit records.
