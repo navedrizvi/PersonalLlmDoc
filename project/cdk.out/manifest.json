@@ -1,28 +1,28 @@
 {
   "version": "36.0.0",
   "artifacts": {
-    "ollama-llama2-stack.assets": {
+    "ollama-llama3-stack.assets": {
       "type": "cdk:asset-manifest",
       "properties": {
-        "file": "ollama-llama2-stack.assets.json",
+        "file": "ollama-llama3-stack.assets.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
       }
     },
-    "ollama-llama2-stack": {
+    "ollama-llama3-stack": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/unknown-region",
       "properties": {
-        "templateFile": "ollama-llama2-stack.template.json",
+        "templateFile": "ollama-llama3-stack.template.json",
         "terminationProtection": false,
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/cf01f7fdb220567cbe321c5c352ccc5f78824b17d5188602f11248ae3470d8c9.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/5f31235b430d2ad2eb087c6dede1f5598b83bdb915d02c4c22f830b3b63d0a6b.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
-          "ollama-llama2-stack.assets"
+          "ollama-llama3-stack.assets"
         ],
         "lookupRole": {
           "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
@@ -31,10 +31,10 @@
         }
       },
       "dependencies": [
-        "ollama-llama2-stack.assets"
+        "ollama-llama3-stack.assets"
       ],
       "metadata": {
-        "/ollama-llama2-stack": [
+        "/ollama-llama3-stack": [
           {
             "type": "aws:cdk:warning",
             "data": "If you are relying on AWS SDK v2 to be present in the Lambda environment already, please explicitly configure a NodeJS runtime of Node 16 or lower. [ack: @aws-cdk/aws-lambda-nodejs:sdkV2NotInRuntime]",
@@ -44,8 +44,8 @@
               "new Bundling (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/bundling.js:1:2975)",
               "Bundling.bundle (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/bundling.js:1:960)",
               "new NodejsFunction (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/function.js:1:1729)",
-              "new AppStack (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:73:22)",
-              "Object.<anonymous> (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:92:1)",
+              "new AppStack (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:79:22)",
+              "Object.<anonymous> (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:107:1)",
               "Module._compile (node:internal/modules/cjs/loader:1369:14)",
               "Module._extensions..js (node:internal/modules/cjs/loader:1427:10)",
               "Module.load (node:internal/modules/cjs/loader:1206:32)",
@@ -55,86 +55,86 @@
             ]
           }
         ],
-        "/ollama-llama2-stack/PhiRawRecordsBucket/Resource": [
+        "/ollama-llama3-stack/PhiRawRecordsBucket/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "PhiRawRecordsBucket4EC7D7C4"
           }
         ],
-        "/ollama-llama2-stack/DeployFiles/AwsCliLayer/Resource": [
+        "/ollama-llama3-stack/DeployFiles/AwsCliLayer/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "DeployFilesAwsCliLayerF562E16D"
           }
         ],
-        "/ollama-llama2-stack/DeployFiles/CustomResource/Default": [
+        "/ollama-llama3-stack/DeployFiles/CustomResource/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "DeployFilesCustomResource51EC1601"
           }
         ],
-        "/ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+        "/ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
           }
         ],
-        "/ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+        "/ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
           }
         ],
-        "/ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+        "/ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
           }
         ],
-        "/ollama-llama2-stack/SyncData/ServiceRole/Resource": [
+        "/ollama-llama3-stack/SyncData/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "SyncDataServiceRoleBFB4A315"
           }
         ],
-        "/ollama-llama2-stack/SyncData/ServiceRole/DefaultPolicy/Resource": [
+        "/ollama-llama3-stack/SyncData/ServiceRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "SyncDataServiceRoleDefaultPolicy7E85240E"
           }
         ],
-        "/ollama-llama2-stack/SyncData/Resource": [
+        "/ollama-llama3-stack/SyncData/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "SyncDataA30C8DB7"
           }
         ],
-        "/ollama-llama2-stack/CDKMetadata/Default": [
+        "/ollama-llama3-stack/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata"
           }
         ],
-        "/ollama-llama2-stack/CDKMetadata/Condition": [
+        "/ollama-llama3-stack/CDKMetadata/Condition": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable"
           }
         ],
-        "/ollama-llama2-stack/BootstrapVersion": [
+        "/ollama-llama3-stack/BootstrapVersion": [
           {
             "type": "aws:cdk:logicalId",
             "data": "BootstrapVersion"
           }
         ],
-        "/ollama-llama2-stack/CheckBootstrapVersion": [
+        "/ollama-llama3-stack/CheckBootstrapVersion": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CheckBootstrapVersion"
           }
         ]
       },
-      "displayName": "ollama-llama2-stack"
+      "displayName": "ollama-llama3-stack"
     },
     "Tree": {
       "type": "cdk:tree",

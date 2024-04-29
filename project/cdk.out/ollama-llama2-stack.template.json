@@ -4,6 +4,7 @@
    "Type": "AWS::S3::Bucket",
    "Properties": {
     "AccessControl": "Private",
+    "BucketName": "ollama-llama2-stack-phi-raw-records",
     "Tags": [
      {
       "Key": "aws-cdk:cr-owned:913aa97b",
@@ -50,7 +51,7 @@
      }
     ],
     "SourceObjectKeys": [
-     "6ee6e9da88611debc3ac7d60b1c30a173902abea04e603703b9a6fd2d4c8699c.zip"
+     "0d3e783ef86d1dad737672c3d583a9fb8514d473a6ed34b3f5fed30c0d672c8a.zip"
     ],
     "DestinationBucketName": {
      "Ref": "PhiRawRecordsBucket4EC7D7C4"
@@ -274,6 +275,29 @@
     "PolicyDocument": {
      "Statement": [
       {
+       "Action": "textract:AnalyzeDocument",
+       "Effect": "Allow",
+       "Resource": "*"
+      },
+      {
+       "Action": "s3:GetObject",
+       "Effect": "Allow",
+       "Resource": {
+        "Fn::Join": [
+         "",
+         [
+          {
+           "Fn::GetAtt": [
+            "PhiRawRecordsBucket4EC7D7C4",
+            "Arn"
+           ]
+          },
+          "/*"
+         ]
+        ]
+       }
+      },
+      {
        "Action": [
         "s3:GetObject*",
         "s3:GetBucket*",
@@ -324,12 +348,15 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "845bcbef530b3c24009a5ad57c092b5540319a2acb0c2c53e6245e7ace91c87a.zip"
+     "S3Key": "e6b410f5081da4cba99f487b9353c036dd6b5202675ff8a0b8c6d8e09be04055.zip"
     },
     "Environment": {
      "Variables": {
       "PRIMARY_KEY": "itemId",
-      "TABLE_NAME": "TEMP",
+      "DYNAMO_TABLE_NAME": "TEMP",
+      "S3_BUCKET_NAME": {
+       "Ref": "PhiRawRecordsBucket4EC7D7C4"
+      },
       "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1"
      }
     },
@@ -348,7 +375,7 @@
    ],
    "Metadata": {
     "aws:cdk:path": "ollama-llama2-stack/SyncData/Resource",
-    "aws:asset:path": "asset.845bcbef530b3c24009a5ad57c092b5540319a2acb0c2c53e6245e7ace91c87a",
+    "aws:asset:path": "asset.e6b410f5081da4cba99f487b9353c036dd6b5202675ff8a0b8c6d8e09be04055",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }

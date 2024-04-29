@@ -4,24 +4,25 @@
     "id": "App",
     "path": "",
     "children": {
-      "ollama-llama2-stack": {
-        "id": "ollama-llama2-stack",
-        "path": "ollama-llama2-stack",
+      "ollama-llama3-stack": {
+        "id": "ollama-llama3-stack",
+        "path": "ollama-llama3-stack",
         "children": {
           "PhiRawRecordsBucket": {
             "id": "PhiRawRecordsBucket",
-            "path": "ollama-llama2-stack/PhiRawRecordsBucket",
+            "path": "ollama-llama3-stack/PhiRawRecordsBucket",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "ollama-llama2-stack/PhiRawRecordsBucket/Resource",
+                "path": "ollama-llama3-stack/PhiRawRecordsBucket/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {
                     "accessControl": "Private",
+                    "bucketName": "ollama-llama3-stack-phi-raw-records",
                     "tags": [
                       {
-                        "key": "aws-cdk:cr-owned:913aa97b",
+                        "key": "aws-cdk:cr-owned:629e2b2e",
                         "value": "true"
                       }
                     ]
@@ -40,19 +41,19 @@
           },
           "DeployFiles": {
             "id": "DeployFiles",
-            "path": "ollama-llama2-stack/DeployFiles",
+            "path": "ollama-llama3-stack/DeployFiles",
             "children": {
               "AwsCliLayer": {
                 "id": "AwsCliLayer",
-                "path": "ollama-llama2-stack/DeployFiles/AwsCliLayer",
+                "path": "ollama-llama3-stack/DeployFiles/AwsCliLayer",
                 "children": {
                   "Code": {
                     "id": "Code",
-                    "path": "ollama-llama2-stack/DeployFiles/AwsCliLayer/Code",
+                    "path": "ollama-llama3-stack/DeployFiles/AwsCliLayer/Code",
                     "children": {
                       "Stage": {
                         "id": "Stage",
-                        "path": "ollama-llama2-stack/DeployFiles/AwsCliLayer/Code/Stage",
+                        "path": "ollama-llama3-stack/DeployFiles/AwsCliLayer/Code/Stage",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.AssetStaging",
                           "version": "2.139.0"
@@ -60,7 +61,7 @@
                       },
                       "AssetBucket": {
                         "id": "AssetBucket",
-                        "path": "ollama-llama2-stack/DeployFiles/AwsCliLayer/Code/AssetBucket",
+                        "path": "ollama-llama3-stack/DeployFiles/AwsCliLayer/Code/AssetBucket",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_s3.BucketBase",
                           "version": "2.139.0"
@@ -74,7 +75,7 @@
                   },
                   "Resource": {
                     "id": "Resource",
-                    "path": "ollama-llama2-stack/DeployFiles/AwsCliLayer/Resource",
+                    "path": "ollama-llama3-stack/DeployFiles/AwsCliLayer/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::Lambda::LayerVersion",
                       "aws:cdk:cloudformation:props": {
@@ -100,7 +101,7 @@
               },
               "CustomResourceHandler": {
                 "id": "CustomResourceHandler",
-                "path": "ollama-llama2-stack/DeployFiles/CustomResourceHandler",
+                "path": "ollama-llama3-stack/DeployFiles/CustomResourceHandler",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_lambda.SingletonFunction",
                   "version": "2.139.0"
@@ -108,11 +109,11 @@
               },
               "Asset1": {
                 "id": "Asset1",
-                "path": "ollama-llama2-stack/DeployFiles/Asset1",
+                "path": "ollama-llama3-stack/DeployFiles/Asset1",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "ollama-llama2-stack/DeployFiles/Asset1/Stage",
+                    "path": "ollama-llama3-stack/DeployFiles/Asset1/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
                       "version": "2.139.0"
@@ -120,7 +121,7 @@
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "ollama-llama2-stack/DeployFiles/Asset1/AssetBucket",
+                    "path": "ollama-llama3-stack/DeployFiles/Asset1/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
                       "version": "2.139.0"
@@ -134,11 +135,11 @@
               },
               "CustomResource": {
                 "id": "CustomResource",
-                "path": "ollama-llama2-stack/DeployFiles/CustomResource",
+                "path": "ollama-llama3-stack/DeployFiles/CustomResource",
                 "children": {
                   "Default": {
                     "id": "Default",
-                    "path": "ollama-llama2-stack/DeployFiles/CustomResource/Default",
+                    "path": "ollama-llama3-stack/DeployFiles/CustomResource/Default",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.CfnResource",
                       "version": "2.139.0"
@@ -158,15 +159,15 @@
           },
           "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C": {
             "id": "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
-            "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
+            "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
             "children": {
               "ServiceRole": {
                 "id": "ServiceRole",
-                "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole",
+                "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole",
                 "children": {
                   "ImportServiceRole": {
                     "id": "ImportServiceRole",
-                    "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/ImportServiceRole",
+                    "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/ImportServiceRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
                       "version": "2.139.0"
@@ -174,7 +175,7 @@
                   },
                   "Resource": {
                     "id": "Resource",
-                    "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource",
+                    "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -213,11 +214,11 @@
                   },
                   "DefaultPolicy": {
                     "id": "DefaultPolicy",
-                    "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy",
+                    "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource",
+                        "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
                           "aws:cdk:cloudformation:props": {
@@ -331,11 +332,11 @@
               },
               "Code": {
                 "id": "Code",
-                "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code",
+                "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/Stage",
+                    "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
                       "version": "2.139.0"
@@ -343,7 +344,7 @@
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/AssetBucket",
+                    "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
                       "version": "2.139.0"
@@ -357,7 +358,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "ollama-llama2-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+                "path": "ollama-llama3-stack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
@@ -401,15 +402,15 @@
           },
           "SyncData": {
             "id": "SyncData",
-            "path": "ollama-llama2-stack/SyncData",
+            "path": "ollama-llama3-stack/SyncData",
             "children": {
               "ServiceRole": {
                 "id": "ServiceRole",
-                "path": "ollama-llama2-stack/SyncData/ServiceRole",
+                "path": "ollama-llama3-stack/SyncData/ServiceRole",
                 "children": {
                   "ImportServiceRole": {
                     "id": "ImportServiceRole",
-                    "path": "ollama-llama2-stack/SyncData/ServiceRole/ImportServiceRole",
+                    "path": "ollama-llama3-stack/SyncData/ServiceRole/ImportServiceRole",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
                       "version": "2.139.0"
@@ -417,7 +418,7 @@
                   },
                   "Resource": {
                     "id": "Resource",
-                    "path": "ollama-llama2-stack/SyncData/ServiceRole/Resource",
+                    "path": "ollama-llama3-stack/SyncData/ServiceRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -456,16 +457,39 @@
                   },
                   "DefaultPolicy": {
                     "id": "DefaultPolicy",
-                    "path": "ollama-llama2-stack/SyncData/ServiceRole/DefaultPolicy",
+                    "path": "ollama-llama3-stack/SyncData/ServiceRole/DefaultPolicy",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "ollama-llama2-stack/SyncData/ServiceRole/DefaultPolicy/Resource",
+                        "path": "ollama-llama3-stack/SyncData/ServiceRole/DefaultPolicy/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
                           "aws:cdk:cloudformation:props": {
                             "policyDocument": {
                               "Statement": [
+                                {
+                                  "Action": "textract:AnalyzeDocument",
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                },
+                                {
+                                  "Action": "s3:GetObject",
+                                  "Effect": "Allow",
+                                  "Resource": {
+                                    "Fn::Join": [
+                                      "",
+                                      [
+                                        {
+                                          "Fn::GetAtt": [
+                                            "PhiRawRecordsBucket4EC7D7C4",
+                                            "Arn"
+                                          ]
+                                        },
+                                        "/*"
+                                      ]
+                                    ]
+                                  }
+                                },
                                 {
                                   "Action": [
                                     "s3:GetObject*",
@@ -526,11 +550,11 @@
               },
               "Code": {
                 "id": "Code",
-                "path": "ollama-llama2-stack/SyncData/Code",
+                "path": "ollama-llama3-stack/SyncData/Code",
                 "children": {
                   "Stage": {
                     "id": "Stage",
-                    "path": "ollama-llama2-stack/SyncData/Code/Stage",
+                    "path": "ollama-llama3-stack/SyncData/Code/Stage",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
                       "version": "2.139.0"
@@ -538,7 +562,7 @@
                   },
                   "AssetBucket": {
                     "id": "AssetBucket",
-                    "path": "ollama-llama2-stack/SyncData/Code/AssetBucket",
+                    "path": "ollama-llama3-stack/SyncData/Code/AssetBucket",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
                       "version": "2.139.0"
@@ -552,7 +576,7 @@
               },
               "Resource": {
                 "id": "Resource",
-                "path": "ollama-llama2-stack/SyncData/Resource",
+                "path": "ollama-llama3-stack/SyncData/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
@@ -560,12 +584,15 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "845bcbef530b3c24009a5ad57c092b5540319a2acb0c2c53e6245e7ace91c87a.zip"
+                      "s3Key": "e6b410f5081da4cba99f487b9353c036dd6b5202675ff8a0b8c6d8e09be04055.zip"
                     },
                     "environment": {
                       "variables": {
                         "PRIMARY_KEY": "itemId",
-                        "TABLE_NAME": "TEMP",
+                        "DYNAMO_TABLE_NAME": "TEMP",
+                        "S3_BUCKET_NAME": {
+                          "Ref": "PhiRawRecordsBucket4EC7D7C4"
+                        },
                         "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1"
                       }
                     },
@@ -576,7 +603,8 @@
                         "Arn"
                       ]
                     },
-                    "runtime": "nodejs20.x"
+                    "runtime": "nodejs20.x",
+                    "timeout": 600
                   }
                 },
                 "constructInfo": {
@@ -592,11 +620,11 @@
           },
           "CDKMetadata": {
             "id": "CDKMetadata",
-            "path": "ollama-llama2-stack/CDKMetadata",
+            "path": "ollama-llama3-stack/CDKMetadata",
             "children": {
               "Default": {
                 "id": "Default",
-                "path": "ollama-llama2-stack/CDKMetadata/Default",
+                "path": "ollama-llama3-stack/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnResource",
                   "version": "2.139.0"
@@ -604,7 +632,7 @@
               },
               "Condition": {
                 "id": "Condition",
-                "path": "ollama-llama2-stack/CDKMetadata/Condition",
+                "path": "ollama-llama3-stack/CDKMetadata/Condition",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnCondition",
                   "version": "2.139.0"
@@ -618,7 +646,7 @@
           },
           "BootstrapVersion": {
             "id": "BootstrapVersion",
-            "path": "ollama-llama2-stack/BootstrapVersion",
+            "path": "ollama-llama3-stack/BootstrapVersion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnParameter",
               "version": "2.139.0"
@@ -626,7 +654,7 @@
           },
           "CheckBootstrapVersion": {
             "id": "CheckBootstrapVersion",
-            "path": "ollama-llama2-stack/CheckBootstrapVersion",
+            "path": "ollama-llama3-stack/CheckBootstrapVersion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnRule",
               "version": "2.139.0"

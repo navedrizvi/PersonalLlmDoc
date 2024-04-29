@@ -1,3 +1,5 @@
+// Infrastructure as code
+
 import {
   Architecture,
   DockerImageCode,
@@ -19,17 +21,22 @@ import { LambdaFunction } from 'aws-cdk-lib/aws-events-targets'
 import { Bucket, BucketAccessControl } from 'aws-cdk-lib/aws-s3'
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment'
 
-const cdkParams = JSON.parse(fs.readFileSync('cdk-params.json', 'utf8'))
 export class AppStack extends Stack {
   constructor(app: App, id: string) {
     super(app, id)
 
     const runOllamaLocally = app.node.tryGetContext('RunOllamaLocally')
     const runOnSchedule = app.node.tryGetContext('RunOnSchedule')
+    const modelName = app.node.tryGetContext('ModelName')
 
     if (runOllamaLocally === 'true') {
+      if (!modelName) {
+        throw new Error(
+          'ModelName and DockerImageUri must be provided in context',
+        )
+      }
     } else {
-      const modelName = app.node.tryGetContext('ModelName')
+      const cdkParams = JSON.parse(fs.readFileSync('cdk-params.json', 'utf8'))
       const dockerImageUri = app.node.tryGetContext('DockerImageUri')
       if (!modelName || !dockerImageUri) {
         throw new Error(
@@ -71,10 +78,10 @@ export class AppStack extends Stack {
       lambda.addToRolePolicy(loggingPolicy)
     }
 
-    // Create an S3 bucket
     const bucket = new Bucket(this, 'PhiRawRecordsBucket', {
       removalPolicy: RemovalPolicy.DESTROY,
       accessControl: BucketAccessControl.PRIVATE,
+      bucketName: `${this.stackName}-phi-raw-records`,
     })
 
     new BucketDeployment(this, 'DeployFiles', {
@@ -96,6 +103,7 @@ export class AppStack extends Stack {
         S3_BUCKET_NAME: bucket.bucketName,
         // TABLE_NAME: dynamoTable.tableName,
       },
+      timeout: Duration.minutes(10),
       runtime: Runtime.NODEJS_20_X,
     }
 
@@ -103,8 +111,23 @@ export class AppStack extends Stack {
       entry: join(__dirname, 'lambdas', 'sync-data.ts'),
       ...nodeJsFunctionProps,
     })
+
+    lambda.addToRolePolicy(
+      new PolicyStatement({
+        actions: ['textract:AnalyzeDocument'],
+        resources: ['*'],
+      }),
+    )
+
+    lambda.addToRolePolicy(
+      new PolicyStatement({
+        actions: ['s3:GetObject'],
+        resources: [bucket.bucketArn + '/*'],
+      }),
+    )
+
     if (runOnSchedule !== 'false') {
-      // schedule starts at 1:00am UTC every day.
+      // schedule starts at 1:00am UTC every day by default
       const eventRule = new Rule(this, 'scheduleRule', {
         // TODO user should be able to adjust this cron as preferred; can just update here for now as needed
         schedule: Schedule.cron({ minute: '0', hour: '1' }),
@@ -117,5 +140,6 @@ export class AppStack extends Stack {
 }
 
 const app = new App()
-new AppStack(app, `ollama-${cdkParams.MODEL_NAME}-stack`)
+const MODEL_NAME = app.node.tryGetContext('ModelName')
+new AppStack(app, `ollama-${MODEL_NAME}-stack`)
 app.synth()
