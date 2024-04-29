@@ -17,7 +17,6 @@ import { join } from 'path'
 import { Rule, Schedule } from 'aws-cdk-lib/aws-events'
 import { LambdaFunction } from 'aws-cdk-lib/aws-events-targets'
 import { Bucket, BucketAccessControl } from 'aws-cdk-lib/aws-s3'
-import { Asset } from 'aws-cdk-lib/aws-s3-assets'
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment'
 
 const cdkParams = JSON.parse(fs.readFileSync('cdk-params.json', 'utf8'))
@@ -93,7 +92,8 @@ export class AppStack extends Stack {
       depsLockFilePath: join(__dirname, 'lambdas', 'package-lock.json'),
       environment: {
         PRIMARY_KEY: 'itemId',
-        TABLE_NAME: 'TEMP',
+        DYNAMO_TABLE_NAME: 'TEMP',
+        S3_BUCKET_NAME: bucket.bucketName,
         // TABLE_NAME: dynamoTable.tableName,
       },
       runtime: Runtime.NODEJS_20_X,
