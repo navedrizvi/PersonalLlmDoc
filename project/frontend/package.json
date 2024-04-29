@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.564.0",
     "ai": "^2.2.16",
     "clsx": "^2.0.0",
     "encoding": "^0.1.13",

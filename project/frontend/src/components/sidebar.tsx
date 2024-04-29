@@ -6,6 +6,7 @@ import { CopyIcon } from "./icons/copy-icon";
 import { RightChevron } from "./icons/right-chevron";
 import { TrashIcon } from "./icons/trash-icon";
 import { MenuToggle } from "./menu-toggle";
+import React, { useEffect, useState } from "react";
 
 type Props = {
   setMessages: (
@@ -26,6 +27,63 @@ type Props = {
   activeConversation: string;
   menuState: boolean;
   toggleMenuState: Cycle;
+  ehrData: string[][];
+  setEHRSelectedItems: any;
+  ehrSelectedItems: string[];
+
+  stepsData: string[][];
+  setStepsSelectedItems: any;
+  stepsSelectedItems: string[];
+};
+
+interface SLProps {
+  ehrData: string[][];
+  setEHRSelectedItems: any;
+  ehrSelectedItems: string[];
+
+  stepsData: string[][];
+  setStepsSelectedItems: any;
+  stepsSelectedItems: string[];
+}
+
+const SelectableItemList: React.FC<SLProps> = ({
+  ehrData,
+  setEHRSelectedItems,
+  ehrSelectedItems,
+}) => {
+  const toggleItemSelection = (fileName: string) => {
+    setEHRSelectedItems((prevItems: string[]) =>
+      prevItems.includes(fileName)
+        ? prevItems.filter((selectedItem) => selectedItem !== fileName)
+        : [...prevItems, fileName],
+    );
+  };
+
+  return (
+    <div>
+      {ehrData.map((item: string[], index: number) => (
+        <motion.button
+          key={index}
+          onClick={() => toggleItemSelection(item[0])}
+          whileTap={{ backgroundColor: "rgba(255,255,255,0.8)" }}
+          whileHover={{ backgroundColor: "rgba(255,255,255,1)" }}
+          className={`flex cursor-pointer items-center justify-between bg-white/80 px-4 py-2 text-black`}
+          style={{
+            backgroundColor: ehrSelectedItems.includes(item[0])
+              ? "#00ff00"
+              : "",
+          }}
+        >
+          <span className="text-xs font-semibold">{item[0]}</span>
+          {ehrSelectedItems.includes(item[0]) && (
+            <div className="flex h-4 w-4 items-center justify-center rounded-full bg-white text-green-600">
+              ✔
+            </div>
+          )}
+        </motion.button>
+      ))}
+    </div>
+  );
 };
 
 export default function Sidebar({
@@ -37,6 +95,13 @@ export default function Sidebar({
   activeConversation,
   menuState,
   toggleMenuState,
+  ehrData,
+  ehrSelectedItems,
+  setEHRSelectedItems,
+
+  stepsData,
+  setStepsSelectedItems,
+  stepsSelectedItems,
 }: Props) {
   function loadConvo(conversation: { title: string; filePath: string }) {
     if (activeConversation == conversation.title) return;
@@ -76,6 +141,12 @@ export default function Sidebar({
     toggleMenuState();
   }
 
+  const [isItemListVisible, setIsItemListVisible] = useState(false);
+
+  const toggleItemListVisibility = () => {
+    setIsItemListVisible(!isItemListVisible);
+  };
+
   return (
     <>
       <motion.div
@@ -94,15 +165,90 @@ export default function Sidebar({
         )}
       >
         {menuState && (
-          <motion.button
-            onClick={startNewChat}
-            whileTap={{ backgroundColor: "rgba(255,255,255,0.8)" }}
-            whileHover={{ backgroundColor: "rgba(255,255,255,1)" }}
-            className="flex cursor-pointer items-center justify-between bg-white/80 px-4 py-2 text-black"
-          >
-            <span className="text-xs font-semibold">New Chat</span>
-            <RightChevron className="h-4 w-4 fill-black" />
-          </motion.button>
+          <>
+            <span> </span>
+
+            <span className="text-xs font-semibold">
+              Medical and Clinic Records Available
+            </span>
+            <motion.button
+              onClick={toggleItemListVisibility}
+              whileTap={{ backgroundColor: "rgba(255,255,255,0.8)" }}
+              whileHover={{ backgroundColor: "rgba(255,255,255,1)" }}
+              className="flex cursor-pointer items-center justify-between bg-white/80 px-4 py-2 text-black"
+            >
+              <span className="text-xs font-semibold">EHR records</span>
+              <RightChevron className="h-4 w-4 fill-black" />
+            </motion.button>
+            {isItemListVisible && (
+              <SelectableItemList
+                ehrData={ehrData}
+                ehrSelectedItems={ehrSelectedItems}
+                setEHRSelectedItems={setEHRSelectedItems}
+                stepsData={stepsData}
+                stepsSelectedItems={stepsSelectedItems}
+                setStepsSelectedItems={setStepsSelectedItems}
+              />
+            )}
+
+            <span className="space text-xs font-semibold">
+              Activity Data Available
+            </span>
+            <motion.button
+              // onClick={startNewChat}
+              whileTap={{ backgroundColor: "rgba(255,255,255,0.8)" }}
+              whileHover={{ backgroundColor: "rgba(255,255,255,1)" }}
+              className="flex cursor-pointer items-center justify-between bg-white/80 px-4 py-2 text-black"
+            >
+              <span className="text-xs font-semibold">Steps Count</span>
+              <RightChevron className="h-4 w-4 fill-black" />
+            </motion.button>
+            <motion.button
+              // onClick={startNewChat}
+              whileTap={{ backgroundColor: "rgba(255,255,255,0.8)" }}
+              whileHover={{ backgroundColor: "rgba(255,255,255,1)" }}
+              className="flex cursor-pointer items-center justify-between bg-white/80 px-4 py-2 text-black"
+            >
+              <span className="text-xs font-semibold">
+                Heartrate (count per min)
+              </span>
+              <RightChevron className="h-4 w-4 fill-black" />
+            </motion.button>
+
+            <motion.button
+              // onClick={startNewChat}
+              whileTap={{ backgroundColor: "rgba(255,255,255,0.8)" }}
+              whileHover={{ backgroundColor: "rgba(255,255,255,1)" }}
+              className="flex cursor-pointer items-center justify-between bg-white/80 px-4 py-2 text-black"
+            >
+              <span className="text-xs font-semibold">Distance (miles)</span>
+              <RightChevron className="h-4 w-4 fill-black" />
+            </motion.button>
+
+            <motion.button
+              // onClick={startNewChat}
+              whileTap={{ backgroundColor: "rgba(255,255,255,0.8)" }}
+              whileHover={{ backgroundColor: "rgba(255,255,255,1)" }}
+              className="flex cursor-pointer items-center justify-between bg-white/80 px-4 py-2 text-black"
+            >
+              <span className="text-xs font-semibold">
+                Active Energy Burned (cal)
+              </span>
+              <RightChevron className="h-4 w-4 fill-black" />
+            </motion.button>
+
+            <motion.button
+              // onClick={startNewChat}
+              whileTap={{ backgroundColor: "rgba(255,255,255,0.8)" }}
+              whileHover={{ backgroundColor: "rgba(255,255,255,1)" }}
+              className="flex cursor-pointer items-center justify-between bg-white/80 px-4 py-2 text-black"
+            >
+              <span className="text-xs font-semibold">
+                Body Temperature (F)
+              </span>
+              <RightChevron className="h-4 w-4 fill-black" />
+            </motion.button>
+          </>
         )}
         {menuState &&
           conversations.map((c) => (
