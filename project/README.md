@@ -100,3 +100,5 @@ lsof -i ::11434
 
 ollama pull <model-name>
 OLLAMA_HOST=0.0.0.0:11434
+
+export OLLAMA_ORIGINS="https://minimal-llm-ui-git-main-rizvinaved1997s-projects.vercel.app"
