@@ -1,0 +1,320 @@
+type,sourceName,sourceVersion,productType,device,startDate,endDate,unit,value
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-23 23:23:15 +0000,2023-09-23 23:30:32 +0000,Cal,0.27799999999999997
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-23 23:35:21 +0000,2023-09-23 23:45:08 +0000,Cal,0.534
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-23 23:45:08 +0000,2023-09-23 23:55:00 +0000,Cal,11.567999999999998
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-23 23:54:57 +0000,2023-09-24 00:04:48 +0000,Cal,14.841999999999997
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 00:04:48 +0000,2023-09-24 00:14:14 +0000,Cal,17.030000000000005
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 00:14:35 +0000,2023-09-24 00:22:40 +0000,Cal,0.172
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 00:30:53 +0000,2023-09-24 00:39:54 +0000,Cal,0.11199999999999999
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 00:40:35 +0000,2023-09-24 00:50:15 +0000,Cal,0.454
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 00:50:35 +0000,2023-09-24 00:59:37 +0000,Cal,17.849
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 01:03:03 +0000,2023-09-24 01:12:23 +0000,Cal,4.457
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 01:33:26 +0000,2023-09-24 01:43:16 +0000,Cal,8.305
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 01:43:26 +0000,2023-09-24 01:52:46 +0000,Cal,6.8260000000000005
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 02:04:35 +0000,2023-09-24 02:09:32 +0000,Cal,0.082
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 02:21:37 +0000,2023-09-24 02:22:36 +0000,Cal,1.0010000000000001
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 03:05:53 +0000,2023-09-24 03:06:04 +0000,Cal,0.062
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 03:19:22 +0000,2023-09-24 03:19:32 +0000,Cal,0.062
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 03:37:04 +0000,2023-09-24 03:41:29 +0000,Cal,0.067
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 03:54:52 +0000,2023-09-24 04:04:13 +0000,Cal,8.656999999999998
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 04:05:04 +0000,2023-09-24 04:05:14 +0000,Cal,0.057
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 04:06:15 +0000,2023-09-24 04:07:09 +0000,Cal,0.72
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 04:55:19 +0000,2023-09-24 05:03:37 +0000,Cal,0.7950000000000002
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 05:13:17 +0000,2023-09-24 05:21:52 +0000,Cal,2.835
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 05:23:52 +0000,2023-09-24 05:25:16 +0000,Cal,0.388
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 05:39:01 +0000,2023-09-24 05:47:32 +0000,Cal,3.7380000000000004
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 05:49:45 +0000,2023-09-24 05:54:41 +0000,Cal,2.2019999999999995
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 06:02:51 +0000,2023-09-24 06:12:15 +0000,Cal,0.185
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 06:12:46 +0000,2023-09-24 06:16:08 +0000,Cal,0.10400000000000001
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 07:00:57 +0000,2023-09-24 07:01:27 +0000,Cal,0.764
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 16:14:58 +0000,2023-09-24 16:15:18 +0000,Cal,0.16699999999999998
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 16:38:35 +0000,2023-09-24 16:38:55 +0000,Cal,0.189
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 16:39:26 +0000,2023-09-24 16:45:18 +0000,Cal,0.24
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 17:00:22 +0000,2023-09-24 17:09:48 +0000,Cal,3.1340000000000003
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 17:11:44 +0000,2023-09-24 17:20:53 +0000,Cal,2.626
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 17:22:25 +0000,2023-09-24 17:22:55 +0000,Cal,0.19799999999999998
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 17:54:45 +0000,2023-09-24 17:58:50 +0000,Cal,0.19799999999999998
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 18:09:23 +0000,2023-09-24 18:15:52 +0000,Cal,0.11499999999999999
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 18:22:46 +0000,2023-09-24 18:32:17 +0000,Cal,0.517
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 18:32:17 +0000,2023-09-24 18:40:05 +0000,Cal,1.8930000000000002
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 18:43:52 +0000,2023-09-24 18:53:06 +0000,Cal,2.2729999999999997
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 18:55:35 +0000,2023-09-24 18:56:41 +0000,Cal,0.55
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 19:06:08 +0000,2023-09-24 19:16:01 +0000,Cal,2.0029999999999997
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 19:16:01 +0000,2023-09-24 19:17:36 +0000,Cal,1.2790000000000004
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 19:56:17 +0000,2023-09-24 20:04:58 +0000,Cal,5.4190000000000005
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 20:06:40 +0000,2023-09-24 20:14:30 +0000,Cal,4.772000000000001
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 20:17:44 +0000,2023-09-24 20:24:33 +0000,Cal,5.555000000000001
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 20:29:59 +0000,2023-09-24 20:36:17 +0000,Cal,5.839
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 20:42:46 +0000,2023-09-24 20:52:23 +0000,Cal,4.034000000000001
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 20:52:33 +0000,2023-09-24 20:57:19 +0000,Cal,0.28900000000000003
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 21:23:04 +0000,2023-09-24 21:28:03 +0000,Cal,5.694
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 21:35:58 +0000,2023-09-24 21:44:16 +0000,Cal,4.9
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 21:54:51 +0000,2023-09-24 22:03:27 +0000,Cal,3.7560000000000002
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 22:07:02 +0000,2023-09-24 22:14:52 +0000,Cal,0.617
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 23:03:36 +0000,2023-09-24 23:13:28 +0000,Cal,4.524000000000001
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 23:14:19 +0000,2023-09-24 23:24:17 +0000,Cal,9.926999999999998
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 23:24:17 +0000,2023-09-24 23:29:00 +0000,Cal,1.588
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-24 23:28:58 +0000,2023-09-24 23:34:12 +0000,Cal,4.3999999999999995
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-25 00:19:52 +0000,2023-09-25 00:25:48 +0000,Cal,6.328000000000001
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-25 00:35:37 +0000,2023-09-25 00:44:43 +0000,Cal,5.513
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-25 00:52:51 +0000,2023-09-25 00:57:51 +0000,Cal,0.127
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-25 01:06:06 +0000,2023-09-25 01:15:32 +0000,Cal,14.980000000000002
+HKQuantityTypeIdentifierActiveEnergyBurned,iPhone,17.0,"iPhone16,1","<<HKDevice: 0x303c21400>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone16,1, software:17.0>",2023-09-25 01:20:43 +0000,2023-09-25 01:20:53 +0000,Cal,0.04
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-28 02:20:00 +0000,2023-10-28 02:25:00 +0000,Cal,14.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-28 06:25:00 +0000,2023-10-28 06:30:00 +0000,Cal,18.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-28 06:45:00 +0000,2023-10-28 06:50:00 +0000,Cal,23.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-28 06:55:00 +0000,2023-10-28 07:00:00 +0000,Cal,28.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-28 18:20:00 +0000,2023-10-28 18:25:00 +0000,Cal,22.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 00:40:00 +0000,2023-10-29 00:45:00 +0000,Cal,33.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 05:00:00 +0000,2023-10-29 05:05:00 +0000,Cal,24.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 05:05:01 +0000,2023-10-29 05:10:00 +0000,Cal,11.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 05:10:01 +0000,2023-10-29 05:15:00 +0000,Cal,22.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 05:15:01 +0000,2023-10-29 05:20:00 +0000,Cal,12.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 05:20:00 +0000,2023-10-29 05:25:00 +0000,Cal,11.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 18:40:00 +0000,2023-10-29 18:45:00 +0000,Cal,27.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 18:45:01 +0000,2023-10-29 18:50:00 +0000,Cal,17.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 18:50:01 +0000,2023-10-29 18:55:00 +0000,Cal,26.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 22:10:00 +0000,2023-10-29 22:15:00 +0000,Cal,39.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 23:00:00 +0000,2023-10-29 23:05:00 +0000,Cal,11.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-29 23:35:00 +0000,2023-10-29 23:40:00 +0000,Cal,9.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-31 03:20:00 +0000,2023-10-31 03:25:00 +0000,Cal,16.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-31 03:30:00 +0000,2023-10-31 03:35:00 +0000,Cal,22.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-10-31 06:15:00 +0000,2023-10-31 06:20:00 +0000,Cal,25.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 02:35:00 +0000,2023-11-01 02:40:00 +0000,Cal,39.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 02:55:00 +0000,2023-11-01 03:00:00 +0000,Cal,65.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 03:00:01 +0000,2023-11-01 03:05:00 +0000,Cal,68.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 03:35:00 +0000,2023-11-01 03:40:00 +0000,Cal,46.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 04:35:00 +0000,2023-11-01 04:40:00 +0000,Cal,55.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 05:40:00 +0000,2023-11-01 05:45:00 +0000,Cal,28.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 05:50:00 +0000,2023-11-01 05:55:00 +0000,Cal,26.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 05:55:01 +0000,2023-11-01 06:00:00 +0000,Cal,15.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 06:25:00 +0000,2023-11-01 06:30:00 +0000,Cal,19.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 06:30:01 +0000,2023-11-01 06:35:00 +0000,Cal,23.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 06:45:00 +0000,2023-11-01 06:50:00 +0000,Cal,10.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 07:10:00 +0000,2023-11-01 07:15:00 +0000,Cal,13.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-01 07:25:00 +0000,2023-11-01 07:30:00 +0000,Cal,13.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-02 07:05:00 +0000,2023-11-02 07:10:00 +0000,Cal,12.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-02 07:10:01 +0000,2023-11-02 07:15:00 +0000,Cal,10.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-02 07:20:00 +0000,2023-11-02 07:25:00 +0000,Cal,10.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-02 22:15:00 +0000,2023-11-02 22:20:00 +0000,Cal,56.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-02 22:25:00 +0000,2023-11-02 22:30:00 +0000,Cal,11.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-02 23:20:00 +0000,2023-11-02 23:25:00 +0000,Cal,10.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 00:10:00 +0000,2023-11-03 00:15:00 +0000,Cal,22.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 00:25:00 +0000,2023-11-03 00:30:00 +0000,Cal,14.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 00:35:00 +0000,2023-11-03 00:40:00 +0000,Cal,42.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 02:20:00 +0000,2023-11-03 02:25:00 +0000,Cal,75.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 02:25:01 +0000,2023-11-03 02:30:00 +0000,Cal,21.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 02:35:00 +0000,2023-11-03 02:40:00 +0000,Cal,59.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 02:45:00 +0000,2023-11-03 02:50:00 +0000,Cal,55.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 03:00:00 +0000,2023-11-03 03:05:00 +0000,Cal,28.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 03:05:01 +0000,2023-11-03 03:10:00 +0000,Cal,38.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 03:10:01 +0000,2023-11-03 03:15:00 +0000,Cal,48.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 03:15:01 +0000,2023-11-03 03:20:00 +0000,Cal,28.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 03:20:01 +0000,2023-11-03 03:25:00 +0000,Cal,19.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 03:25:01 +0000,2023-11-03 03:30:00 +0000,Cal,24.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 05:25:00 +0000,2023-11-03 05:30:00 +0000,Cal,13.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 05:30:01 +0000,2023-11-03 05:35:00 +0000,Cal,22.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 05:35:01 +0000,2023-11-03 05:40:00 +0000,Cal,19.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 05:40:01 +0000,2023-11-03 05:45:00 +0000,Cal,24.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 05:45:01 +0000,2023-11-03 05:50:00 +0000,Cal,21.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 05:55:00 +0000,2023-11-03 06:00:00 +0000,Cal,21.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 06:20:00 +0000,2023-11-03 06:25:00 +0000,Cal,12.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 06:25:01 +0000,2023-11-03 06:30:00 +0000,Cal,10.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 06:55:00 +0000,2023-11-03 07:00:00 +0000,Cal,13.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 20:25:00 +0000,2023-11-03 20:30:00 +0000,Cal,11.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 20:40:00 +0000,2023-11-03 20:45:00 +0000,Cal,12.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 20:50:00 +0000,2023-11-03 20:55:00 +0000,Cal,11.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-03 20:55:01 +0000,2023-11-03 21:00:00 +0000,Cal,17.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 01:35:00 +0000,2023-11-04 01:40:00 +0000,Cal,12.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 05:10:00 +0000,2023-11-04 05:15:00 +0000,Cal,10.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 17:15:00 +0000,2023-11-04 17:20:00 +0000,Cal,25.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 17:20:01 +0000,2023-11-04 17:25:00 +0000,Cal,17.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 17:40:00 +0000,2023-11-04 17:45:00 +0000,Cal,19.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 17:45:01 +0000,2023-11-04 17:50:00 +0000,Cal,29.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 17:55:00 +0000,2023-11-04 18:00:00 +0000,Cal,44.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 18:05:00 +0000,2023-11-04 18:10:00 +0000,Cal,13.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 18:35:00 +0000,2023-11-04 18:40:00 +0000,Cal,23.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 18:40:00 +0000,2023-11-04 18:45:00 +0000,Cal,32.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 22:45:00 +0000,2023-11-04 22:50:00 +0000,Cal,27.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 22:55:00 +0000,2023-11-04 23:00:00 +0000,Cal,13.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 23:10:00 +0000,2023-11-04 23:15:00 +0000,Cal,34.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 23:15:01 +0000,2023-11-04 23:20:00 +0000,Cal,33.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 23:20:01 +0000,2023-11-04 23:25:00 +0000,Cal,39.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-04 23:35:00 +0000,2023-11-04 23:40:00 +0000,Cal,21.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 00:00:00 +0000,2023-11-05 00:05:00 +0000,Cal,14.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 00:25:00 +0000,2023-11-05 00:30:00 +0000,Cal,11.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 01:15:00 +0000,2023-11-05 01:20:00 +0000,Cal,11.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 05:40:00 +0000,2023-11-05 05:45:00 +0000,Cal,10.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 07:25:00 +0000,2023-11-05 07:30:00 +0000,Cal,11.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 07:35:00 +0000,2023-11-05 07:40:00 +0000,Cal,13.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 07:40:01 +0000,2023-11-05 07:45:00 +0000,Cal,9.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 08:15:00 +0000,2023-11-05 08:20:00 +0000,Cal,9.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 08:55:00 +0000,2023-11-05 09:00:00 +0000,Cal,13.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 09:30:00 +0000,2023-11-05 09:35:00 +0000,Cal,35.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 10:00:00 +0000,2023-11-05 10:05:00 +0000,Cal,32.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 10:20:00 +0000,2023-11-05 10:25:00 +0000,Cal,27.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 10:25:01 +0000,2023-11-05 10:30:00 +0000,Cal,22.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 10:30:01 +0000,2023-11-05 10:35:00 +0000,Cal,21.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 10:35:01 +0000,2023-11-05 10:40:00 +0000,Cal,14.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 10:40:01 +0000,2023-11-05 10:45:00 +0000,Cal,11.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 10:45:01 +0000,2023-11-05 10:50:00 +0000,Cal,11.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 10:50:01 +0000,2023-11-05 10:55:00 +0000,Cal,9.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-05 23:20:00 +0000,2023-11-05 23:25:00 +0000,Cal,18.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,10,"iPhone16,1",,2023-11-06 02:00:00 +0000,2023-11-06 02:05:00 +0000,Cal,28.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-06 22:10:00 +0000,2023-11-06 22:15:00 +0000,Cal,12.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-07 06:05:00 +0000,2023-11-07 06:10:00 +0000,Cal,10.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-07 06:10:01 +0000,2023-11-07 06:15:00 +0000,Cal,10.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-07 06:15:01 +0000,2023-11-07 06:20:00 +0000,Cal,15.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-07 06:30:00 +0000,2023-11-07 06:35:00 +0000,Cal,10.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-07 06:40:00 +0000,2023-11-07 06:45:00 +0000,Cal,10.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-07 06:45:01 +0000,2023-11-07 06:50:00 +0000,Cal,10.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-07 08:00:00 +0000,2023-11-07 08:05:00 +0000,Cal,36.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-08 03:20:00 +0000,2023-11-08 03:25:00 +0000,Cal,27.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-08 03:35:00 +0000,2023-11-08 03:40:00 +0000,Cal,20.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-08 03:40:01 +0000,2023-11-08 03:45:00 +0000,Cal,13.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-08 04:25:00 +0000,2023-11-08 04:30:00 +0000,Cal,78.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-08 06:40:00 +0000,2023-11-08 06:45:00 +0000,Cal,16.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-08 06:50:00 +0000,2023-11-08 06:55:00 +0000,Cal,12.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,16,"iPhone16,1",,2023-11-08 07:25:00 +0000,2023-11-08 07:30:00 +0000,Cal,15.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-08 22:25:00 +0000,2023-11-08 22:30:00 +0000,Cal,29.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-08 23:15:00 +0000,2023-11-08 23:20:00 +0000,Cal,57.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 05:40:00 +0000,2023-11-09 05:45:00 +0000,Cal,28.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 05:50:00 +0000,2023-11-09 05:55:00 +0000,Cal,30.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 06:00:00 +0000,2023-11-09 06:05:00 +0000,Cal,22.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 06:10:00 +0000,2023-11-09 06:15:00 +0000,Cal,14.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 06:15:01 +0000,2023-11-09 06:20:00 +0000,Cal,10.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 07:40:00 +0000,2023-11-09 07:45:00 +0000,Cal,25.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 08:00:00 +0000,2023-11-09 08:05:00 +0000,Cal,50.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 08:15:00 +0000,2023-11-09 08:20:00 +0000,Cal,52.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 19:20:00 +0000,2023-11-09 19:25:00 +0000,Cal,16.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 19:25:01 +0000,2023-11-09 19:30:00 +0000,Cal,18.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 19:50:00 +0000,2023-11-09 19:55:00 +0000,Cal,36.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-09 21:25:00 +0000,2023-11-09 21:30:00 +0000,Cal,29.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-10 03:50:00 +0000,2023-11-10 03:55:00 +0000,Cal,12.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-10 04:00:00 +0000,2023-11-10 04:05:00 +0000,Cal,12.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-10 08:10:00 +0000,2023-11-10 08:15:00 +0000,Cal,11.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-10 09:25:00 +0000,2023-11-10 09:30:00 +0000,Cal,82.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 00:35:00 +0000,2023-11-11 00:40:00 +0000,Cal,27.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 11:10:00 +0000,2023-11-11 11:15:00 +0000,Cal,14.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 11:15:01 +0000,2023-11-11 11:20:00 +0000,Cal,11.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 18:10:00 +0000,2023-11-11 18:15:00 +0000,Cal,29.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 18:35:00 +0000,2023-11-11 18:40:00 +0000,Cal,24.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 18:40:01 +0000,2023-11-11 18:45:00 +0000,Cal,19.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 18:45:01 +0000,2023-11-11 18:50:00 +0000,Cal,25.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 19:05:00 +0000,2023-11-11 19:10:00 +0000,Cal,30.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 19:10:01 +0000,2023-11-11 19:15:00 +0000,Cal,28.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 19:15:01 +0000,2023-11-11 19:20:00 +0000,Cal,31.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 23:50:00 +0000,2023-11-11 23:55:00 +0000,Cal,14.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-11 23:55:01 +0000,2023-11-12 00:00:00 +0000,Cal,27.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-12 01:45:00 +0000,2023-11-12 01:50:00 +0000,Cal,52.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-12 05:40:00 +0000,2023-11-12 05:45:00 +0000,Cal,11.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-12 19:55:00 +0000,2023-11-12 20:00:00 +0000,Cal,16.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-13 00:00:00 +0000,2023-11-13 00:05:00 +0000,Cal,17.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-13 20:15:00 +0000,2023-11-13 20:20:00 +0000,Cal,22.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-13 23:45:00 +0000,2023-11-13 23:50:00 +0000,Cal,58.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-14 00:00:00 +0000,2023-11-14 00:05:00 +0000,Cal,66.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-14 04:25:00 +0000,2023-11-14 04:30:00 +0000,Cal,11.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,11,"iPhone16,1",,2023-11-14 07:20:00 +0000,2023-11-14 07:25:00 +0000,Cal,31.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 06:55:00 +0000,2023-11-18 07:00:00 +0000,Cal,14.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 07:00:01 +0000,2023-11-18 07:05:00 +0000,Cal,10.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 07:05:01 +0000,2023-11-18 07:10:00 +0000,Cal,11.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 07:30:00 +0000,2023-11-18 07:35:00 +0000,Cal,13.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 08:00:00 +0000,2023-11-18 08:05:00 +0000,Cal,17.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 17:40:00 +0000,2023-11-18 17:45:00 +0000,Cal,14.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 18:25:00 +0000,2023-11-18 18:30:00 +0000,Cal,49.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 18:30:01 +0000,2023-11-18 18:35:00 +0000,Cal,29.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 18:35:01 +0000,2023-11-18 18:40:00 +0000,Cal,17.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 18:40:01 +0000,2023-11-18 18:45:00 +0000,Cal,25.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 18:45:01 +0000,2023-11-18 18:50:00 +0000,Cal,34.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 19:20:00 +0000,2023-11-18 19:25:00 +0000,Cal,47.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 19:30:00 +0000,2023-11-18 19:35:00 +0000,Cal,40.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 19:35:01 +0000,2023-11-18 19:40:00 +0000,Cal,10.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 22:50:00 +0000,2023-11-18 22:55:00 +0000,Cal,28.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 23:05:00 +0000,2023-11-18 23:10:00 +0000,Cal,27.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 23:10:01 +0000,2023-11-18 23:15:00 +0000,Cal,23.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 23:25:00 +0000,2023-11-18 23:30:00 +0000,Cal,28.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 23:45:00 +0000,2023-11-18 23:50:00 +0000,Cal,17.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 23:50:01 +0000,2023-11-18 23:55:00 +0000,Cal,19.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-18 23:55:01 +0000,2023-11-19 00:00:00 +0000,Cal,22.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-19 01:00:00 +0000,2023-11-19 01:05:00 +0000,Cal,61.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-20 04:40:00 +0000,2023-11-20 04:45:00 +0000,Cal,10.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-21 16:45:00 +0000,2023-11-21 16:50:00 +0000,Cal,13.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 03:40:00 +0000,2023-11-22 03:45:00 +0000,Cal,64.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 04:10:00 +0000,2023-11-22 04:15:00 +0000,Cal,57.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 04:25:00 +0000,2023-11-22 04:30:00 +0000,Cal,35.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 04:35:00 +0000,2023-11-22 04:40:00 +0000,Cal,22.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 04:40:01 +0000,2023-11-22 04:45:00 +0000,Cal,17.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 05:50:00 +0000,2023-11-22 05:55:00 +0000,Cal,20.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 06:20:00 +0000,2023-11-22 06:25:00 +0000,Cal,14.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 06:30:00 +0000,2023-11-22 06:35:00 +0000,Cal,10.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 06:40:00 +0000,2023-11-22 06:45:00 +0000,Cal,11.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 06:50:00 +0000,2023-11-22 06:55:00 +0000,Cal,13.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,9,"iPhone16,1",,2023-11-22 06:55:01 +0000,2023-11-22 07:00:00 +0000,Cal,13.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-24 05:40:00 +0000,2023-11-24 05:45:00 +0000,Cal,25.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-24 08:15:00 +0000,2023-11-24 08:20:00 +0000,Cal,12.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-24 21:40:00 +0000,2023-11-24 21:45:00 +0000,Cal,15.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 01:20:00 +0000,2023-11-25 01:25:00 +0000,Cal,16.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 07:25:00 +0000,2023-11-25 07:30:00 +0000,Cal,20.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 07:30:01 +0000,2023-11-25 07:35:00 +0000,Cal,13.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 18:25:00 +0000,2023-11-25 18:30:00 +0000,Cal,46.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 18:35:00 +0000,2023-11-25 18:40:00 +0000,Cal,40.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 18:40:01 +0000,2023-11-25 18:45:00 +0000,Cal,40.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 19:10:00 +0000,2023-11-25 19:15:00 +0000,Cal,62.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 19:25:00 +0000,2023-11-25 19:30:00 +0000,Cal,32.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 19:45:00 +0000,2023-11-25 19:50:00 +0000,Cal,25.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 19:50:01 +0000,2023-11-25 19:55:00 +0000,Cal,18.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 20:25:00 +0000,2023-11-25 20:30:00 +0000,Cal,10.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 20:30:01 +0000,2023-11-25 20:35:00 +0000,Cal,12.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 20:35:01 +0000,2023-11-25 20:40:00 +0000,Cal,19.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-25 20:55:00 +0000,2023-11-25 21:00:00 +0000,Cal,10.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-26 02:05:00 +0000,2023-11-26 02:10:00 +0000,Cal,12.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-26 02:20:00 +0000,2023-11-26 02:25:00 +0000,Cal,11.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-26 02:55:00 +0000,2023-11-26 03:00:00 +0000,Cal,15.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-26 04:15:00 +0000,2023-11-26 04:20:00 +0000,Cal,15.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-26 08:15:00 +0000,2023-11-26 08:20:00 +0000,Cal,32.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-26 08:30:00 +0000,2023-11-26 08:35:00 +0000,Cal,10.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-26 09:25:00 +0000,2023-11-26 09:30:00 +0000,Cal,21.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-27 23:50:00 +0000,2023-11-27 23:55:00 +0000,Cal,24.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-28 04:15:00 +0000,2023-11-28 04:20:00 +0000,Cal,13.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-28 04:20:01 +0000,2023-11-28 04:25:00 +0000,Cal,20.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-28 04:45:00 +0000,2023-11-28 04:50:00 +0000,Cal,46.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-28 08:55:00 +0000,2023-11-28 09:00:00 +0000,Cal,14.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-28 09:00:00 +0000,2023-11-28 09:05:00 +0000,Cal,14.8
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-28 09:30:00 +0000,2023-11-28 09:35:00 +0000,Cal,49.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-28 09:40:00 +0000,2023-11-28 09:45:00 +0000,Cal,23.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-28 10:00:00 +0000,2023-11-28 10:05:00 +0000,Cal,12.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 04:05:00 +0000,2023-11-29 04:10:00 +0000,Cal,15.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 04:10:01 +0000,2023-11-29 04:15:00 +0000,Cal,11.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 04:40:00 +0000,2023-11-29 04:45:00 +0000,Cal,15.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 04:45:01 +0000,2023-11-29 04:50:00 +0000,Cal,14.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 06:40:00 +0000,2023-11-29 06:45:00 +0000,Cal,21.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 06:55:00 +0000,2023-11-29 07:00:00 +0000,Cal,17.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 07:05:00 +0000,2023-11-29 07:10:00 +0000,Cal,15.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 07:10:01 +0000,2023-11-29 07:15:00 +0000,Cal,15.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 07:15:01 +0000,2023-11-29 07:20:00 +0000,Cal,12.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 07:20:01 +0000,2023-11-29 07:25:00 +0000,Cal,11.3
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 07:25:01 +0000,2023-11-29 07:30:00 +0000,Cal,15.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 07:30:01 +0000,2023-11-29 07:35:00 +0000,Cal,13.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 07:35:01 +0000,2023-11-29 07:40:00 +0000,Cal,12.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-11-29 07:50:00 +0000,2023-11-29 07:55:00 +0000,Cal,12.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-12-07 04:05:00 +0000,2023-12-07 04:10:00 +0000,Cal,12.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,1,"iPhone16,1",,2023-12-07 06:55:00 +0000,2023-12-07 07:00:00 +0000,Cal,13.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-17 03:15:00 +0000,2024-01-17 03:20:00 +0000,Cal,36.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-17 03:30:00 +0000,2024-01-17 03:35:00 +0000,Cal,19.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-17 04:25:00 +0000,2024-01-17 04:30:00 +0000,Cal,16.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-17 04:30:01 +0000,2024-01-17 04:35:00 +0000,Cal,27.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 01:45:00 +0000,2024-01-18 01:50:00 +0000,Cal,20.5
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 15:10:00 +0000,2024-01-18 15:15:00 +0000,Cal,19.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 15:15:01 +0000,2024-01-18 15:20:00 +0000,Cal,16.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 15:20:01 +0000,2024-01-18 15:25:00 +0000,Cal,12.7
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 15:25:01 +0000,2024-01-18 15:30:00 +0000,Cal,18.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 15:30:01 +0000,2024-01-18 15:35:00 +0000,Cal,14.1
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 15:40:00 +0000,2024-01-18 15:45:00 +0000,Cal,13.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 15:45:01 +0000,2024-01-18 15:50:00 +0000,Cal,10.6
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,2,"iPhone16,1",,2024-01-18 17:00:00 +0000,2024-01-18 17:05:00 +0000,Cal,21.9
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,3,"iPhone16,1",,2024-01-19 03:15:00 +0000,2024-01-19 03:20:00 +0000,Cal,24.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,3,"iPhone16,1",,2024-01-19 03:25:00 +0000,2024-01-19 03:30:00 +0000,Cal,24.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,3,"iPhone16,1",,2024-01-19 04:15:00 +0000,2024-01-19 04:20:00 +0000,Cal,16.2
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,3,"iPhone16,1",,2024-01-19 04:40:00 +0000,2024-01-19 04:45:00 +0000,Cal,18.4
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,3,"iPhone16,1",,2024-01-19 19:55:00 +0000,2024-01-19 20:00:00 +0000,Cal,12.0
+HKQuantityTypeIdentifierActiveEnergyBurned,Ultrahuman,3,"iPhone16,1",,2024-01-20 01:20:00 +0000,2024-01-20 01:25:00 +0000,Cal,10.6

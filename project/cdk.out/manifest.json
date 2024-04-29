@@ -18,7 +18,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/fcf6b8fe5456944c9b935c68207f1a714c4ad789a1f4cdb5d0d95292947f0c63.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/ef9789c34fe5f5d0f8508eba4a362aa81e79bbdc27b6cf36d094ddc2de94d09c.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -44,8 +44,8 @@
               "new Bundling (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/bundling.js:1:2975)",
               "Bundling.bundle (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/bundling.js:1:960)",
               "new NodejsFunction (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/function.js:1:1729)",
-              "new AppStack (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:92:22)",
-              "Object.<anonymous> (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:123:1)",
+              "new AppStack (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:151:22)",
+              "Object.<anonymous> (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:187:1)",
               "Module._compile (node:internal/modules/cjs/loader:1369:14)",
               "Module._extensions..js (node:internal/modules/cjs/loader:1427:10)",
               "Module.load (node:internal/modules/cjs/loader:1206:32)",
@@ -103,6 +103,76 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "EhrTable1C8BB2E4"
+          }
+        ],
+        "/ollama-llama3-stack/ActiveEnergyBurnedTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "ActiveEnergyBurnedTable67D8A00D"
+            }
+          }
+        ],
+        "/ollama-llama3-stack/ActiveEnergyBurnedTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ActiveEnergyBurnedTable67D8A00D"
+          }
+        ],
+        "/ollama-llama3-stack/Distance_Mile": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "DistanceMile42881597"
+            }
+          }
+        ],
+        "/ollama-llama3-stack/Distance_Mile/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DistanceMile42881597"
+          }
+        ],
+        "/ollama-llama3-stack/HeartRate_CountPerMin": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "HeartRateCountPerMinF8C47FB4"
+            }
+          }
+        ],
+        "/ollama-llama3-stack/HeartRate_CountPerMin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HeartRateCountPerMinF8C47FB4"
+          }
+        ],
+        "/ollama-llama3-stack/Steps_Count": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "StepsCount7A25C5FE"
+            }
+          }
+        ],
+        "/ollama-llama3-stack/Steps_Count/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StepsCount7A25C5FE"
+          }
+        ],
+        "/ollama-llama3-stack/BodyTemprature_Farenheit": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "BodyTempratureFarenheit67A1C125"
+            }
+          }
+        ],
+        "/ollama-llama3-stack/BodyTemprature_Farenheit/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BodyTempratureFarenheit67A1C125"
           }
         ],
         "/ollama-llama3-stack/SyncData/ServiceRole/Resource": [

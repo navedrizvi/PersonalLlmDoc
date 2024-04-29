@@ -456,6 +456,286 @@
               "version": "2.139.0"
             }
           },
+          "ActiveEnergyBurnedTable": {
+            "id": "ActiveEnergyBurnedTable",
+            "path": "ollama-llama3-stack/ActiveEnergyBurnedTable",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ollama-llama3-stack/ActiveEnergyBurnedTable/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "startDateDate",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "startDateDate",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "ActiveEnergyBurned_Cal"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.139.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "ollama-llama3-stack/ActiveEnergyBurnedTable/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.139.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.139.0"
+            }
+          },
+          "Distance_Mile": {
+            "id": "Distance_Mile",
+            "path": "ollama-llama3-stack/Distance_Mile",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ollama-llama3-stack/Distance_Mile/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "startDateDate",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "startDateDate",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "Distance_Mile"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.139.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "ollama-llama3-stack/Distance_Mile/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.139.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.139.0"
+            }
+          },
+          "HeartRate_CountPerMin": {
+            "id": "HeartRate_CountPerMin",
+            "path": "ollama-llama3-stack/HeartRate_CountPerMin",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ollama-llama3-stack/HeartRate_CountPerMin/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "startDateDate",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "startDateDate",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "HeartRate_CountPerMin"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.139.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "ollama-llama3-stack/HeartRate_CountPerMin/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.139.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.139.0"
+            }
+          },
+          "Steps_Count": {
+            "id": "Steps_Count",
+            "path": "ollama-llama3-stack/Steps_Count",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ollama-llama3-stack/Steps_Count/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "startDateDate",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "startDateDate",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "Steps_Count"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.139.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "ollama-llama3-stack/Steps_Count/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.139.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.139.0"
+            }
+          },
+          "BodyTemprature_Farenheit": {
+            "id": "BodyTemprature_Farenheit",
+            "path": "ollama-llama3-stack/BodyTemprature_Farenheit",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ollama-llama3-stack/BodyTemprature_Farenheit/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "startDateDate",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "startDateDate",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "endTime",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "BodyTemprature_Farenheit"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.139.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "ollama-llama3-stack/BodyTemprature_Farenheit/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.139.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.139.0"
+            }
+          },
           "SyncData": {
             "id": "SyncData",
             "path": "ollama-llama3-stack/SyncData",
@@ -620,6 +900,111 @@
                                       "Ref": "AWS::NoValue"
                                     }
                                   ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "ActiveEnergyBurnedTable67D8A00D",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "DistanceMile42881597",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "HeartRateCountPerMinF8C47FB4",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "StepsCount7A25C5FE",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "BodyTempratureFarenheit67A1C125",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
                                 }
                               ],
                               "Version": "2012-10-17"
@@ -685,7 +1070,7 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "1cfc6e0f2cbb71251151fcc8c8082ecec9dfe78f937320c91268d5b4eb9ad230.zip"
+                      "s3Key": "176d9881ac62662bca57325bc6e6f37cfe767171c9c00f7653ffe795aea2b210.zip"
                     },
                     "environment": {
                       "variables": {

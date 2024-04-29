@@ -1,5 +1,9 @@
 import { DynamoDBClient, QueryCommand } from '@aws-sdk/client-dynamodb'
-import { S3Client, ListObjectsCommand } from '@aws-sdk/client-s3'
+import {
+  S3Client,
+  ListObjectsCommand,
+  GetObjectCommand,
+} from '@aws-sdk/client-s3'
 import {
   TextractClient,
   AnalyzeDocumentCommand,
@@ -9,9 +13,17 @@ import {
   ApiResponsePage,
   TextractDocument,
 } from 'amazon-textract-response-parser'
+import csvParser = require('csv-parser')
+import { Readable } from 'stream'
 
 const EHR_TABLE_NAME = process.env.EHR_TABLE_NAME || ''
 const S3_BUCKET_NAME = process.env.S3_BUCKET_NAME || ''
+
+interface WearableRecord {
+  startDate: string
+  endDate: string
+  value: string
+}
 
 export const handler = async (_: any): Promise<any> => {
   try {
@@ -90,6 +102,56 @@ export const handler = async (_: any): Promise<any> => {
                 .replace(/[-—]/g, '')
               aggregatedText += cleanedText + ' '
             }
+          } else if (objectKey?.includes('ActiveEnergyBurned_Cal')) {
+            const records = await downloadWearableDataFromS3(
+              s3Client,
+              'ActiveEnergyBurned_Cal',
+            )
+            insertWearableRecordsIntoDynamoDB(
+              records,
+              dynamoDbClient,
+              'ActiveEnergyBurned_Cal',
+            )
+          } else if (objectKey?.includes('Distance_Mile')) {
+            const records = await downloadWearableDataFromS3(
+              s3Client,
+              'Distance_Mile',
+            )
+            insertWearableRecordsIntoDynamoDB(
+              records,
+              dynamoDbClient,
+              'Distance_Mile',
+            )
+          } else if (objectKey?.includes('HeartRate_CounterPerMin')) {
+            const records = await downloadWearableDataFromS3(
+              s3Client,
+              'HeartRate_CountPerMin',
+            )
+            insertWearableRecordsIntoDynamoDB(
+              records,
+              dynamoDbClient,
+              'HeartRate_CountPerMin',
+            )
+          } else if (objectKey?.includes('Steps_Count')) {
+            const records = await downloadWearableDataFromS3(
+              s3Client,
+              'Steps_Count',
+            )
+            insertWearableRecordsIntoDynamoDB(
+              records,
+              dynamoDbClient,
+              'Steps_Count',
+            )
+          } else if (objectKey?.includes('BodyTemprature_Farenheit')) {
+            const records = await downloadWearableDataFromS3(
+              s3Client,
+              'BodyTemprature_Farenheit',
+            )
+            insertWearableRecordsIntoDynamoDB(
+              records,
+              dynamoDbClient,
+              'BodyTemprature_Farenheit',
+            )
           }
         }
 
@@ -111,5 +173,70 @@ export const handler = async (_: any): Promise<any> => {
     }
   } catch (error) {
     console.error('Error processing documents:', error)
+  }
+}
+
+const downloadWearableDataFromS3 = async (
+  s3Client: S3Client,
+  objectKey: string,
+): Promise<WearableRecord[]> => {
+  try {
+    const getObjectParams = {
+      Bucket: S3_BUCKET_NAME,
+      Key: objectKey,
+    }
+
+    const { Body } = await s3Client.send(new GetObjectCommand(getObjectParams))
+    if (!Body || !(Body instanceof Readable)) {
+      throw new Error('Invalid response body from S3 getObject')
+    }
+
+    return new Promise((resolve, reject) => {
+      const records: WearableRecord[] = []
+      const parser = Body.pipe(csvParser())
+
+      parser.on('data', (data: any) => {
+        const record: WearableRecord = {
+          startDate: data.startDate,
+          endDate: data.endDate,
+          value: data.value,
+        }
+        records.push(record)
+      })
+
+      parser.on('end', () => resolve(records))
+      parser.on('error', reject)
+    })
+  } catch (error) {
+    console.error('Error downloading CSV from S3:', error)
+    throw error
+  }
+}
+
+const insertWearableRecordsIntoDynamoDB = async (
+  records: WearableRecord[],
+  dynamoDbClient: DynamoDBClient,
+  tableName: string,
+): Promise<void> => {
+  try {
+    for (const record of records) {
+      const [startDateDate, startTime] = record.startDate.split(' ')
+      const [endDateDate, endTime] = record.endDate.split(' ')
+
+      const item = {
+        startDate: startDateDate,
+        endDate: endTime,
+        value: record.value,
+      }
+
+      await dynamoDbClient.send(
+        new PutCommand({
+          TableName: tableName,
+          Item: item,
+        }),
+      )
+    }
+  } catch (error) {
+    console.error('Error inserting records into DynamoDB:', error)
   }
 }

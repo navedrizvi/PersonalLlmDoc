@@ -105,6 +105,71 @@ export class AppStack extends Stack {
       removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
     })
 
+    const wearableTable1 = new Table(this, 'ActiveEnergyBurnedTable', {
+      partitionKey: {
+        name: 'startDateDate',
+        type: AttributeType.STRING,
+      },
+      sortKey: {
+        name: 'endTime',
+        type: AttributeType.STRING,
+      },
+      tableName: 'ActiveEnergyBurned_Cal',
+      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+    })
+
+    const wearableTable2 = new Table(this, 'Distance_Mile', {
+      partitionKey: {
+        name: 'startDateDate',
+        type: AttributeType.STRING,
+      },
+      sortKey: {
+        name: 'endTime',
+        type: AttributeType.STRING,
+      },
+      tableName: 'Distance_Mile',
+      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+    })
+
+    const wearableTable3 = new Table(this, 'HeartRate_CountPerMin', {
+      partitionKey: {
+        name: 'startDateDate',
+        type: AttributeType.STRING,
+      },
+      sortKey: {
+        name: 'endTime',
+        type: AttributeType.STRING,
+      },
+      tableName: 'HeartRate_CountPerMin',
+      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+    })
+
+    const wearableTable4 = new Table(this, 'Steps_Count', {
+      partitionKey: {
+        name: 'startDateDate',
+        type: AttributeType.STRING,
+      },
+      sortKey: {
+        name: 'endTime',
+        type: AttributeType.STRING,
+      },
+      tableName: 'Steps_Count',
+      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+    })
+
+    const wearableTable5 = new Table(this, 'BodyTemprature_Farenheit', {
+      partitionKey: {
+        name: 'startDateDate',
+        type: AttributeType.STRING,
+      },
+      sortKey: {
+        name: 'endTime',
+        type: AttributeType.STRING,
+      },
+      tableName: 'BodyTemprature_Farenheit',
+      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+    })
+
     const nodeJsFunctionProps: NodejsFunctionProps = {
       bundling: {
         externalModules: [
@@ -146,6 +211,8 @@ export class AppStack extends Stack {
         // TODO user should be able to adjust this cron as preferred; can just update here for now as needed
         schedule: Schedule.cron({ minute: '0', hour: '1' }),
       })
+      // TODO if this is enabled, we should just be writing data from a timeframe of the schedule,
+      // but currently the lambda is reading the entire source data.
       eventRule.addTarget(new LambdaFunction(lambda))
       // TODO0 create an alarm to automatically get alerted on scheduled sync failrues
     }
@@ -154,6 +221,12 @@ export class AppStack extends Stack {
 
     ehrTable.grantReadData(lambda)
     ehrTable.grantWriteData(lambda)
+
+    wearableTable1.grantWriteData(lambda)
+    wearableTable2.grantWriteData(lambda)
+    wearableTable3.grantWriteData(lambda)
+    wearableTable4.grantWriteData(lambda)
+    wearableTable5.grantWriteData(lambda)
   }
 }
 
