@@ -99,6 +99,10 @@ local docker setup (recommended):
 lsof -i ::11434
 
 ollama pull <model-name>
-OLLAMA_HOST=0.0.0.0:11434
+ollama pull medllama2
 
 export OLLAMA_ORIGINS="https://minimal-llm-ui-git-main-rizvinaved1997s-projects.vercel.app"
+
+add to phi-raw-records. each record should have a unique name. NOTE: do not keep the file with same name but change its contents, the contents will not get modified; instead create a new file with a different name and the updated contents.
+
+add more phi-raw-records to the S3 bucket (using the S3 upload CLI/API). The folder here serves to demonstrates example records, and get uploaded to the bucked at deploy-time.

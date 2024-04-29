@@ -16,9 +16,11 @@ deploy-with-runner:
 	--context DockerImageUri="${ECR_IMAGE_URI}"
 
 # Passing RunOllamaLocally as true to run the model locally
+# Passing RunOllamaLocally as false; if not passed, will run it at 1amUTC
 deploy:
 	npx cdk deploy \
 	--context RunOllamaLocally="true" \
+	--context RunOnSchedule="false" \
 	--stack-name $(STACK_NAME)
 
 invoke:
