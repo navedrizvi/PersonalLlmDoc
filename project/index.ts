@@ -67,17 +67,17 @@ export class AppStack extends Stack {
         dockerImageFunctionProps,
       )
 
-      const loggingPolicy = new PolicyStatement({
-        effect: Effect.ALLOW,
-        actions: [
-          'logs:CreateLogGroup',
-          'logs:CreateLogStream',
-          'logs:PutLogEvents',
-        ],
-        resources: ['*'],
-      })
-
-      lambda.addToRolePolicy(loggingPolicy)
+      lambda.addToRolePolicy(
+        new PolicyStatement({
+          effect: Effect.ALLOW,
+          actions: [
+            'logs:CreateLogGroup',
+            'logs:CreateLogStream',
+            'logs:PutLogEvents',
+          ],
+          resources: ['*'],
+        }),
+      )
     }
 
     const bucket = new Bucket(this, 'PhiRawRecordsBucket', {
@@ -147,14 +147,13 @@ export class AppStack extends Stack {
         schedule: Schedule.cron({ minute: '0', hour: '1' }),
       })
       eventRule.addTarget(new LambdaFunction(lambda))
-    } else {
+      // TODO0 create an alarm to automatically get alerted on scheduled sync failrues
     }
+
     bucket.grantRead(lambda)
 
     ehrTable.grantReadData(lambda)
     ehrTable.grantWriteData(lambda)
-
-    // TODO0 create an alarm for failure alerts
   }
 }
 
