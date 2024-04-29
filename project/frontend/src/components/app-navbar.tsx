@@ -78,15 +78,14 @@ export default function AppNavbar({
         <div className="mx-auto flex flex-wrap items-center justify-between px-20 py-2.5">
           <div className="flex space-x-8">
             <input
-              className="ring-none flex w-64 cursor-text items-center gap-x-2 rounded-md border-transparent bg-transparent px-2 py-1 text-xs font-medium text-white outline-none placeholder:text-white/80 hover:bg-white/10 "
-              // TODO: implement setting title
+              className="w-64 ring-none flex cursor-text items-center gap-x-2 rounded-md border-transparent bg-transparent px-2 py-1 text-xs font-medium text-white outline-none placeholder:text-white/80 hover:bg-white/10 "
               placeholder="Untitled"
               value={documentName}
               onChange={handleInputChange}
             ></input>
           </div>
           <button
-            className="cursor-pointer rounded-md px-2 py-1 text-xs text-white transition-colors hover:bg-white/10"
+            className="cursor-pointer text-xs text-white transition-colors hover:bg-white/10 rounded-md px-2 py-1"
             contentEditable={false}
             onClick={toggleModel}
           >

@@ -49,178 +49,12 @@ export default function Home() {
     scrollToBottom();
   }, [activeConversation]);
 
-  const [ehrData, setEHRData] = useState<string[][]>([]);
-  const [ehrSelectedItems, setEHRSelectedItems] = useState<string[]>(
-    ehrData.map((item) => item[0]),
-  );
-
-  const [stepsData, setStepsData] = useState<string[][]>([]);
-  const [stepsSelectedItems, setStepsSelectedItems] = useState<string[]>(
-    stepsData.map((item) => item[0]),
-  );
-
-  async function getEHRData() {
-    try {
-      await fetch("../api/fs/get-phi", {
-        method: "POST",
-        body: JSON.stringify({
-          tableName: "EhrTable",
-          projectionExpression: "fileName, #textContent",
-          expressionAttributeNames: {
-            "#textContent": "text",
-          },
-        }),
-        headers: {
-          Accept: "*/*",
-          "Content-Type": "application/json",
-        },
-      }).then((response) => {
-        console.log(response),
-          response.json().then((items) => {
-            const data = items.map((e: any) => [e.fileName.S, e.text.S]);
-            setEHRSelectedItems(data.map((item: string) => item[0]));
-            setEHRData(data);
-          });
-      });
-    } catch (error) {
-      console.error("Error fetching EHR data:", error);
-    }
-  }
-
-  const removeDups = (arr: string[]): string[] => {
-    return arr.filter((item, index) => arr.indexOf(item) === index);
-  };
-
-  async function getStepsData() {
-    try {
-      await fetch("../api/fs/get-phi", {
-        method: "POST",
-        body: JSON.stringify({
-          tableName: "Steps_Count",
-          projectionExpression: "startDateDate, #dataValue",
-          expressionAttributeNames: {
-            "#dataValue": "value",
-          },
-        }),
-        headers: {
-          Accept: "*/*",
-          "Content-Type": "application/json",
-        },
-      }).then(async (response) => {
-        console.log(response),
-          await response.json().then((items) => {
-            const data = items.map((e: any) => [e.startDateDate.S, e.value.S]);
-            const selection = removeDups(data.map((item: string) => item[0]));
-            setStepsSelectedItems(selection);
-            setStepsData(data);
-          });
-      });
-    } catch (error) {
-      console.error("Error fetching Steps data:", error);
-    }
-  }
-
-  // async function getStepsData() {
-  //   try {
-  //     await fetch("../api/fs/get-phi", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         tableName: "Steps_Count",
-  //       }),
-  //       headers: {
-  //         Accept: "*/*",
-  //         "Content-Type": "application/json",
-  //       },
-  //     }).then((response) => {
-  //       console.log(response),
-  //         response.json().then((data) => {
-  //           setEHRSelectedItems(data.map((item: string) => item[0]));
-  //           setEHRData(data);
-  //         });
-  //     });
-  //   } catch (error) {
-  //     console.error("Error fetching EHR data:", error);
-  //   }
-  // }
-
-  // async function getStepsData() {
-  //   try {
-  //     await fetch("../api/fs/get-phi", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         tableName: "Steps_Count",
-  //       }),
-  //       headers: {
-  //         Accept: "*/*",
-  //         "Content-Type": "application/json",
-  //       },
-  //     }).then((response) => {
-  //       console.log(response),
-  //         response.json().then((data) => {
-  //           setEHRSelectedItems(data.map((item: string) => item[0]));
-  //           setEHRData(data);
-  //         });
-  //     });
-  //   } catch (error) {
-  //     console.error("Error fetching EHR data:", error);
-  //   }
-  // }
-
-  // async function getStepsData() {
-  //   try {
-  //     await fetch("../api/fs/get-phi", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         tableName: "Steps_Count",
-  //       }),
-  //       headers: {
-  //         Accept: "*/*",
-  //         "Content-Type": "application/json",
-  //       },
-  //     }).then((response) => {
-  //       console.log(response),
-  //         response.json().then((data) => {
-  //           setEHRSelectedItems(data.map((item: string) => item[0]));
-  //           setEHRData(data);
-  //         });
-  //     });
-  //   } catch (error) {
-  //     console.error("Error fetching EHR data:", error);
-  //   }
-  // }
-
-  // async function getStepsData() {
-  //   try {
-  //     await fetch("../api/fs/get-phi", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         tableName: "Steps_Count",
-  //       }),
-  //       headers: {
-  //         Accept: "*/*",
-  //         "Content-Type": "application/json",
-  //       },
-  //     }).then((response) => {
-  //       console.log(response),
-  //         response.json().then((data) => {
-  //           setEHRSelectedItems(data.map((item: string) => item[0]));
-  //           setEHRData(data);
-  //         });
-  //     });
-  //   } catch (error) {
-  //     console.error("Error fetching EHR data:", error);
-  //   }
-  // }
-
   useEffect(() => {
     // Get the initial model
     getInitialModel();
 
     // Get existing conversations
     getExistingConvos();
-
-    getEHRData();
-    getStepsData();
   }, []);
 
   function getInitialModel() {
@@ -278,32 +112,11 @@ export default function Home() {
     if (!ollama) return;
     scrollToBottom();
     if (messages.length == 0) getName(input);
-    const filteredEHRData = ehrData.filter((item) =>
-      ehrSelectedItems.includes(item[0]),
-    );
-    const ehrDataText = filteredEHRData
-      ? filteredEHRData.map((item) => "EHR:\n" + item.join(": ")).join("\n")
-      : "";
-
-    const filteredStepsData = stepsData.filter((item) =>
-      stepsSelectedItems.includes(item[0]),
-    );
-    const stepsDataText = filteredStepsData
-      ? filteredStepsData.map((item) => "STEPS:\n" + item.join(": ")).join("\n")
-      : "";
-
-    const text =
-      "MY QUESTION: " +
-      input +
-      "\nMY SELECTED DATA: \n" +
-      ehrDataText +
-      stepsDataText;
-
     const msg = {
       type: "human",
       id: generateRandomString(8),
       timestamp: Date.now(),
-      content: text,
+      content: input,
     };
     const model = activeModel;
     let streamedText = "";
@@ -474,7 +287,7 @@ export default function Home() {
   function getName(input: string) {
     const nameOllama = new ChatOllama({
       baseUrl: "http://localhost:11434",
-      model: "llama3",
+      model: "llama2",
       verbose: false,
     });
     return nameOllama!
@@ -496,12 +309,6 @@ export default function Home() {
         setMessages={setMessages}
         setNewPrompt={setNewPrompt}
         toggleMenuState={toggleMenuState}
-        ehrData={ehrData}
-        ehrSelectedItems={ehrSelectedItems}
-        setEHRSelectedItems={setEHRSelectedItems}
-        stepsData={stepsData}
-        stepsSelectedItems={stepsSelectedItems}
-        setStepsSelectedItems={setStepsSelectedItems}
       />
       <div
         className="flex max-h-screen min-h-screen w-full flex-col"
@@ -625,15 +432,7 @@ export default function Home() {
             ) : (
               <ExpandingTextInput
                 onChange={(e: any) => {
-                  if (e.target.value != "\n")
-                    console.log(
-                      "sending this prompt:\n" +
-                        "question: " +
-                        e.target.value +
-                        "\nmy healthcare information: " +
-                        ehrData,
-                    );
-                  setNewPrompt(e.target.value);
+                  if (e.target.value != "\n") setNewPrompt(e.target.value);
                 }}
                 onKeyDown={(e) => {
                   if (
