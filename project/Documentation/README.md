@@ -27,7 +27,10 @@ lsof -i ::11434
 
 ## Personal deployment
 
-You can deploy a Cloudformation stack to your account. You will be paying for hosting the PHI in DynamoDB and S3
+You can deploy a Cloudformation stack to your account. You will be paying for hosting the PHI in DynamoDB and S3. Just make sure that the AWS credentials are set in your environment (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_REGION). You can build and deploy the application using the provided make target:
+```
+make deploy
+```
 
 Add your raw health records to phi-raw-records. Upload a directory (which contains the images of the document), it should have a unique name, as shown in the example. NOTE: do not keep the file with same name but change its contents, the contents will not get modified; instead create a new file with a different name and the updated contents.
 
