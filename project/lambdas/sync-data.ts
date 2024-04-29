@@ -42,7 +42,6 @@ export const handler = async (_: any): Promise<any> => {
     // Insert wearable data into DB
     for (const object of Contents!) {
       const objectKey = object.Key
-      console.log('okey: ' + objectKey)
       if (objectKey === 'ActiveEnergyBurned_Cal.csv') {
         const records = await downloadWearableDataFromS3(s3Client, objectKey)
         await insertWearableRecordsIntoDynamoDB(
@@ -57,7 +56,7 @@ export const handler = async (_: any): Promise<any> => {
           dynamoDbClient,
           'Distance_Mile',
         )
-      } else if (objectKey === 'HeartRate_CounterPerMin.csv') {
+      } else if (objectKey === 'HeartRate_CountPerMin.csv') {
         const records = await downloadWearableDataFromS3(s3Client, objectKey)
         await insertWearableRecordsIntoDynamoDB(
           records,
@@ -71,12 +70,12 @@ export const handler = async (_: any): Promise<any> => {
           dynamoDbClient,
           'Steps_Count',
         )
-      } else if (objectKey === 'BodyTemprature_Farenheit.csv') {
+      } else if (objectKey === 'BodyTemperature_Farenheit.csv') {
         const records = await downloadWearableDataFromS3(s3Client, objectKey)
         await insertWearableRecordsIntoDynamoDB(
           records,
           dynamoDbClient,
-          'BodyTemprature_Farenheit',
+          'BodyTemperature_Farenheit',
         )
       }
     }
@@ -221,7 +220,6 @@ const insertWearableRecordsIntoDynamoDB = async (
         endTime: endTime,
         value: record.value,
       }
-      console.log('okey3' + JSON.stringify(item))
 
       await dynamoDbClient.send(
         new PutCommand({
@@ -229,7 +227,6 @@ const insertWearableRecordsIntoDynamoDB = async (
           Item: item,
         }),
       )
-      console.log('okey4??')
     }
   } catch (error) {
     console.error('Error inserting records into DynamoDB:', error)
