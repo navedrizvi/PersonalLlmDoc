@@ -103,11 +103,11 @@ ollama pull medllama2
 
 export OLLAMA_ORIGINS="https://minimal-llm-ui-git-main-rizvinaved1997s-projects.vercel.app"
 
-add to phi-raw-records. each record should have a unique name. NOTE: do not keep the file with same name but change its contents, the contents will not get modified; instead create a new file with a different name and the updated contents.
+add to phi-raw-records. upload a directory (which contains the images of the health react), it should have a unique name, as shown in the example. NOTE: do not keep the file with same name but change its contents, the contents will not get modified; instead create a new file with a different name and the updated contents.
 
 add more phi-raw-records to the S3 bucket (using the S3 upload CLI/API). The folder here serves to demonstrates example records, and get uploaded to the bucked at deploy-time.
 
-To save costs, make sure to delete the CDK stack and, if applicable, the ECR repo.
-
-aws s3 cp root/ s3://ollama-llama3-stack-phi-raw-records/dest/ --recursive
+aws s3 cp 1-dental-visit/ s3://ollama-llama3-stack-phi-raw-records/1-dental-visit/ --recursive
 if you upload directly like this you need to make sure file is in JPEG format, since Tesseract (OCR software) only recognizes images. Use a tool like this to achieve this: https://smallpdf.com/pdf-to-jpg. It will convert one page to a single image. You can delete pages which contain data that is irrelevant for the model, eg: the most important page would likely be the vitals, results and clinic notes therefore other pages can be removed from such patient visit records.
+
+To save costs, make sure to delete the CDK stack and, if applicable, the ECR repo.

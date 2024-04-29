@@ -400,6 +400,62 @@
               "version": "2.139.0"
             }
           },
+          "EhrTable": {
+            "id": "EhrTable",
+            "path": "ollama-llama3-stack/EhrTable",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "ollama-llama3-stack/EhrTable/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "fileName",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "insertionTime",
+                        "attributeType": "N"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "fileName",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "insertionTime",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "EhrTable"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.139.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "ollama-llama3-stack/EhrTable/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.139.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.139.0"
+            }
+          },
           "SyncData": {
             "id": "SyncData",
             "path": "ollama-llama3-stack/SyncData",
@@ -519,6 +575,51 @@
                                       ]
                                     }
                                   ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchGetItem",
+                                    "dynamodb:GetRecords",
+                                    "dynamodb:GetShardIterator",
+                                    "dynamodb:Query",
+                                    "dynamodb:GetItem",
+                                    "dynamodb:Scan",
+                                    "dynamodb:ConditionCheckItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "EhrTable1C8BB2E4",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "EhrTable1C8BB2E4",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
                                 }
                               ],
                               "Version": "2012-10-17"
@@ -584,14 +685,15 @@
                       "s3Bucket": {
                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                       },
-                      "s3Key": "c7fc9f9b992161c12c468a26fe51fba39f4c3544c759acd123c4c9d93885a762.zip"
+                      "s3Key": "1cfc6e0f2cbb71251151fcc8c8082ecec9dfe78f937320c91268d5b4eb9ad230.zip"
                     },
                     "environment": {
                       "variables": {
-                        "PRIMARY_KEY": "itemId",
-                        "DYNAMO_TABLE_NAME": "TEMP",
                         "S3_BUCKET_NAME": {
                           "Ref": "PhiRawRecordsBucket4EC7D7C4"
+                        },
+                        "EHR_TABLE_NAME": {
+                          "Ref": "EhrTable1C8BB2E4"
                         },
                         "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1"
                       }

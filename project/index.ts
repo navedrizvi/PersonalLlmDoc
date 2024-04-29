@@ -1,4 +1,4 @@
-// Infrastructure as code
+// Infrastructure as Code
 
 import {
   Architecture,
@@ -20,6 +20,7 @@ import { Rule, Schedule } from 'aws-cdk-lib/aws-events'
 import { LambdaFunction } from 'aws-cdk-lib/aws-events-targets'
 import { Bucket, BucketAccessControl } from 'aws-cdk-lib/aws-s3'
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment'
+import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb'
 
 export class AppStack extends Stack {
   constructor(app: App, id: string) {
@@ -80,7 +81,7 @@ export class AppStack extends Stack {
     }
 
     const bucket = new Bucket(this, 'PhiRawRecordsBucket', {
-      removalPolicy: RemovalPolicy.DESTROY,
+      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
       accessControl: BucketAccessControl.PRIVATE,
       bucketName: `${this.stackName}-phi-raw-records`,
     })
@@ -88,6 +89,20 @@ export class AppStack extends Stack {
     new BucketDeployment(this, 'DeployFiles', {
       sources: [Source.asset('phi-raw-records')],
       destinationBucket: bucket,
+    })
+
+    const ehrTable = new Table(this, 'EhrTable', {
+      partitionKey: {
+        name: 'fileName',
+        type: AttributeType.STRING,
+      },
+      // Sort documents under a partition key by insertionTime to preserve page order of EHR
+      sortKey: {
+        name: 'insertionTime',
+        type: AttributeType.NUMBER,
+      },
+      tableName: 'EhrTable',
+      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
     })
 
     const nodeJsFunctionProps: NodejsFunctionProps = {
@@ -99,10 +114,8 @@ export class AppStack extends Stack {
       },
       depsLockFilePath: join(__dirname, 'lambdas', 'package-lock.json'),
       environment: {
-        PRIMARY_KEY: 'itemId',
-        DYNAMO_TABLE_NAME: 'TEMP',
         S3_BUCKET_NAME: bucket.bucketName,
-        // TABLE_NAME: dynamoTable.tableName,
+        EHR_TABLE_NAME: ehrTable.tableName,
       },
       timeout: Duration.minutes(10),
       runtime: Runtime.NODEJS_20_X,
@@ -137,6 +150,10 @@ export class AppStack extends Stack {
     } else {
     }
     bucket.grantRead(lambda)
+
+    ehrTable.grantReadData(lambda)
+    ehrTable.grantWriteData(lambda)
+
     // TODO0 create an alarm for failure alerts
   }
 }

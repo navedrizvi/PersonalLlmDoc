@@ -18,7 +18,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/10489baf75ced52cebea282541400cf2c684f309975bfaeb20e13d097890d10f.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/fcf6b8fe5456944c9b935c68207f1a714c4ad789a1f4cdb5d0d95292947f0c63.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -44,8 +44,8 @@
               "new Bundling (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/bundling.js:1:2975)",
               "Bundling.bundle (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/bundling.js:1:960)",
               "new NodejsFunction (/Users/navedrizvi/Documents/school/health-informatics/project/node_modules/aws-cdk-lib/aws-lambda-nodejs/lib/function.js:1:1729)",
-              "new AppStack (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:80:22)",
-              "Object.<anonymous> (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:109:1)",
+              "new AppStack (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:92:22)",
+              "Object.<anonymous> (/Users/navedrizvi/Documents/school/health-informatics/project/index.js:123:1)",
               "Module._compile (node:internal/modules/cjs/loader:1369:14)",
               "Module._extensions..js (node:internal/modules/cjs/loader:1427:10)",
               "Module.load (node:internal/modules/cjs/loader:1206:32)",
@@ -89,6 +89,20 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+          }
+        ],
+        "/ollama-llama3-stack/EhrTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "EhrTable1C8BB2E4"
+            }
+          }
+        ],
+        "/ollama-llama3-stack/EhrTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EhrTable1C8BB2E4"
           }
         ],
         "/ollama-llama3-stack/SyncData/ServiceRole/Resource": [
