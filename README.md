@@ -43,5 +43,5 @@ If you upload directly like this you need to make sure file is in JPEG format, s
 To save costs, make sure to delete the CDK stack and, if applicable, the ECR repo.
 
 # Frontend
-
-Credit for front end goes to @richawo: https://github.com/richawo/minimal-llm-ui
+Front-end is available here: 
+[https://github.com/navedrizvi/minimal-llm-ui](https://github.com/navedrizvi/minimal-llm-ui)
