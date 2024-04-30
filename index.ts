@@ -21,6 +21,11 @@ import { LambdaFunction } from 'aws-cdk-lib/aws-events-targets'
 import { Bucket, BucketAccessControl } from 'aws-cdk-lib/aws-s3'
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment'
 import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb'
+import {
+  Alarm,
+  ComparisonOperator,
+  TreatMissingData,
+} from 'aws-cdk-lib/aws-cloudwatch'
 
 export class AppStack extends Stack {
   constructor(app: App, id: string) {
@@ -32,9 +37,7 @@ export class AppStack extends Stack {
 
     if (runOllamaLocally === 'true') {
       if (!modelName) {
-        throw new Error(
-          'ModelName and DockerImageUri must be provided in context',
-        )
+        throw new Error('ModelName')
       }
     } else {
       const cdkParams = JSON.parse(fs.readFileSync('cdk-params.json', 'utf8'))
@@ -102,7 +105,7 @@ export class AppStack extends Stack {
         type: AttributeType.NUMBER,
       },
       tableName: 'EhrTable',
-      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+      removalPolicy: RemovalPolicy.DESTROY,
     })
 
     const wearableTable1 = new Table(this, 'ActiveEnergyBurnedTable', {
@@ -115,7 +118,7 @@ export class AppStack extends Stack {
         type: AttributeType.STRING,
       },
       tableName: 'ActiveEnergyBurned_Cal',
-      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+      removalPolicy: RemovalPolicy.DESTROY,
     })
 
     const wearableTable2 = new Table(this, 'Distance_Mile', {
@@ -128,7 +131,7 @@ export class AppStack extends Stack {
         type: AttributeType.STRING,
       },
       tableName: 'Distance_Mile',
-      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+      removalPolicy: RemovalPolicy.DESTROY,
     })
 
     const wearableTable3 = new Table(this, 'HeartRate_CountPerMin', {
@@ -141,7 +144,7 @@ export class AppStack extends Stack {
         type: AttributeType.STRING,
       },
       tableName: 'HeartRate_CountPerMin',
-      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+      removalPolicy: RemovalPolicy.DESTROY,
     })
 
     const wearableTable4 = new Table(this, 'Steps_Count', {
@@ -154,7 +157,7 @@ export class AppStack extends Stack {
         type: AttributeType.STRING,
       },
       tableName: 'Steps_Count',
-      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+      removalPolicy: RemovalPolicy.DESTROY,
     })
 
     const wearableTable5 = new Table(this, 'BodyTemprature_Farenheit', {
@@ -167,7 +170,7 @@ export class AppStack extends Stack {
         type: AttributeType.STRING,
       },
       tableName: 'BodyTemprature_Farenheit',
-      removalPolicy: RemovalPolicy.DESTROY, // NOT recommended for production code
+      removalPolicy: RemovalPolicy.DESTROY,
     })
 
     const nodeJsFunctionProps: NodejsFunctionProps = {
@@ -214,7 +217,16 @@ export class AppStack extends Stack {
       // TODO if this is enabled, we should just be writing data from a timeframe of the schedule,
       // but currently the lambda is reading the entire source data.
       eventRule.addTarget(new LambdaFunction(lambda))
-      // TODO0 create an alarm to automatically get alerted on scheduled sync failrues
+
+      // Alarm to get alerted on scheduled run failures, add actions as needed
+      new Alarm(this, 'LambdaFailureAlarm', {
+        metric: lambda.metricErrors(),
+        threshold: 1,
+        evaluationPeriods: 1,
+        alarmDescription: 'Lambda function failure alarm',
+        comparisonOperator: ComparisonOperator.GREATER_THAN_THRESHOLD,
+        treatMissingData: TreatMissingData.NOT_BREACHING,
+      })
     }
 
     bucket.grantRead(lambda)
